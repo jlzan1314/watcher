@@ -46,6 +46,22 @@ var TestCmd = &cobra.Command{
 	},
 }
 
+var RunCmd = &cobra.Command{
+	Use:   "run",
+	Short: "watch run",
+	Long:  `watch run`,
+	Run: func(c *cobra.Command, a []string) {
+		c.MarkFlagRequired("cmd")
+		argsObject := lib.Args{
+			Cmd:   Cmd,
+			Args:  Args,
+			Dirs:  Dirs,
+			Match: Match,
+		}
+		lib.StartProcess(argsObject)
+	},
+}
+
 func Execute() {
 	if err := RootCmd.Execute(); err != nil {
 		fmt.Println(err)
@@ -55,8 +71,14 @@ func Execute() {
 
 func init() {
 	RootCmd.AddCommand(TestCmd)
+	RootCmd.AddCommand(RunCmd)
 	RootCmd.Flags().StringVarP(&Cmd, "cmd", "c", "", "cmd")
 	RootCmd.Flags().StringVarP(&Match, "match", "m", "", "match 'php|js'")
 	RootCmd.Flags().StringSliceVarP(&Args, "args", "a", nil, "-a args2 -a arg2")
 	RootCmd.Flags().StringSliceVarP(&Dirs, "dirs", "d", nil, "-d args2 -d arg2")
+
+	RunCmd.Flags().StringVarP(&Cmd, "cmd", "c", "", "cmd")
+	RunCmd.Flags().StringVarP(&Match, "match", "m", "", "match 'php|js'")
+	RunCmd.Flags().StringSliceVarP(&Args, "args", "a", nil, "-a args2 -a arg2")
+	RunCmd.Flags().StringSliceVarP(&Dirs, "dirs", "d", nil, "-d args2 -d arg2")
 }

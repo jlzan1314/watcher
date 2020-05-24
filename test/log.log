@@ -1,0 +1,988 @@
+20-05-23 13:16:47 @22.0]     TRACE   swConnection_send(:218): send 14/14 bytes, errno=0
+[2020-05-23 13:16:47 @22.0]     TRACE   swConnection_peek(:246): peek -1/1 bytes, errno=11
+[2020-05-23 13:16:47 @22.0]     TRACE   swConnection_recv(:184): recv 7/8192 bytes, errno=0
+[2020-05-23 13:16:47 @22.0]     TRACE   swConnection_peek(:246): peek -1/1 bytes, errno=11
+[2020-05-23 13:16:47 @22.0]     TRACE   swConnection_send(:218): send 46/46 bytes, errno=0
+[2020-05-23 13:16:47 @22.0]     TRACE   swConnection_peek(:246): peek -1/1 bytes, errno=11
+[2020-05-23 13:16:47 @22.0]     TRACE   swConnection_recv(:184): recv 5/8192 bytes, errno=0
+[2020-05-23 13:16:47 @22.0]     TRACE   swTimer_add(:183): id=477, exec_msec=130278, msec=500, round=484, exist=2
+[2020-05-23 13:16:47 @22.0]     TRACE   on_yield(:214): php_coro_yield from cid=1 to cid=-1
+[2020-05-23 13:16:47 #1.4]      TRACE   swTimer_select(:234): timer msec=130001, round=131
+[2020-05-23 13:16:47 #1.4]      TRACE   swTimer_select(:246): id=1, exec_msec=130000, round=0, exist=0
+[2020-05-23 13:16:47 @26.0]     TRACE   swTimer_select(:234): timer msec=128751, round=334
+[2020-05-23 13:16:47 @26.0]     TRACE   swTimer_select(:246): id=335, exec_msec=128750, round=333, exist=0
+[2020-05-23 13:16:47 @26.0]     TRACE   on_resume(:228): php_coro_resume from cid=-1 to cid=1
+[2020-05-23 13:16:47 @26.0]     TRACE   swConnection_peek(:246): peek -1/1 bytes, errno=11
+[2020-05-23 13:16:47 @26.0]     TRACE   swConnection_send(:218): send 14/14 bytes, errno=0
+[2020-05-23 13:16:47 @26.0]     TRACE   swConnection_peek(:246): peek -1/1 bytes, errno=11
+[2020-05-23 13:16:47 @26.0]     TRACE   swConnection_recv(:184): recv -1/8192 bytes, errno=11
+[2020-05-23 13:16:47 @26.0]     TRACE   swTimer_add(:183): id=336, exec_msec=188751, msec=60000, round=334, exist=2
+[2020-05-23 13:16:47 @26.0]     TRACE   swReactorEpoll_add(:140): add event[reactor_id=0, fd=5, events=512]
+[2020-05-23 13:16:47 @26.0]     TRACE   wait_event(:146): socket#5 blongs to cid#1 is waiting for READ event
+[2020-05-23 13:16:47 @26.0]     TRACE   on_yield(:214): php_coro_yield from cid=1 to cid=-1
+[2020-05-23 13:16:47 @26.0]     TRACE   on_resume(:228): php_coro_resume from cid=-1 to cid=1
+[2020-05-23 13:16:47 @26.0]     TRACE   swReactorEpoll_del(:155): remove event[reactor_id=0|fd=5]
+[2020-05-23 13:16:47 @26.0]     TRACE   wait_event(:187): socket#5 blongs to cid#1 trigger READ event
+[2020-05-23 13:16:47 @26.0]     TRACE   swConnection_recv(:184): recv 7/8192 bytes, errno=0
+[2020-05-23 13:16:47 @26.0]     TRACE   swTimer_del_ex(:213): id=336, exec_msec=188751, round=334, exist=0
+[2020-05-23 13:16:47 @26.0]     TRACE   swConnection_peek(:246): peek -1/1 bytes, errno=11
+[2020-05-23 13:16:47 @26.0]     TRACE   swConnection_send(:218): send 36/36 bytes, errno=0
+[2020-05-23 13:16:47 @26.0]     TRACE   swConnection_peek(:246): peek -1/1 bytes, errno=11
+[2020-05-23 13:16:47 @26.0]     TRACE   swConnection_recv(:184): recv -1/8192 bytes, errno=11
+[2020-05-23 13:16:47 @26.0]     TRACE   swTimer_add(:183): id=337, exec_msec=188751, msec=60000, round=335, exist=1
+[2020-05-23 13:16:47 @26.0]     TRACE   swReactorEpoll_add(:140): add event[reactor_id=0, fd=5, events=512]
+[2020-05-23 13:16:47 @26.0]     TRACE   wait_event(:146): socket#5 blongs to cid#1 is waiting for READ event
+[2020-05-23 13:16:47 @26.0]     TRACE   on_yield(:214): php_coro_yield from cid=1 to cid=-1
+[2020-05-23 13:16:47 @26.0]     TRACE   swTimer_select(:234): timer msec=128751, round=335
+[2020-05-23 13:16:47 @26.0]     TRACE   on_resume(:228): php_coro_resume from cid=-1 to cid=1
+[2020-05-23 13:16:47 @26.0]     TRACE   swReactorEpoll_del(:155): remove event[reactor_id=0|fd=5]
+[2020-05-23 13:16:47 @26.0]     TRACE   wait_event(:187): socket#5 blongs to cid#1 trigger READ event
+[2020-05-23 13:16:47 @26.0]     TRACE   swConnection_recv(:184): recv 5/8192 bytes, errno=0
+[2020-05-23 13:16:47 @26.0]     TRACE   swTimer_del_ex(:213): id=337, exec_msec=188751, round=335, exist=0
+[2020-05-23 13:16:47 @26.0]     TRACE   swTimer_add(:183): id=338, exec_msec=129251, msec=500, round=336, exist=1
+[2020-05-23 13:16:47 @26.0]     TRACE   on_yield(:214): php_coro_yield from cid=1 to cid=-1
+[2020-05-23 13:16:47 @26.0]     TRACE   swTimer_select(:234): timer msec=128751, round=336
+[2020-05-23 13:16:47 @23.0]     TRACE   swTimer_select(:234): timer msec=128764, round=327
+[2020-05-23 13:16:47 @23.0]     TRACE   swTimer_select(:246): id=328, exec_msec=128764, round=326, exist=0
+[2020-05-23 13:16:47 @23.0]     TRACE   on_resume(:228): php_coro_resume from cid=-1 to cid=1
+[2020-05-23 13:16:47 @23.0]     TRACE   swConnection_peek(:246): peek -1/1 bytes, errno=11
+[2020-05-23 13:16:47 @23.0]     TRACE   swConnection_send(:218): send 14/14 bytes, errno=0
+[2020-05-23 13:16:47 @23.0]     TRACE   swConnection_peek(:246): peek -1/1 bytes, errno=11
+[2020-05-23 13:16:47 @23.0]     TRACE   swConnection_recv(:184): recv 7/8192 bytes, errno=0
+[2020-05-23 13:16:47 @23.0]     TRACE   swConnection_peek(:246): peek -1/1 bytes, errno=11
+[2020-05-23 13:16:47 @23.0]     TRACE   swConnection_send(:218): send 46/46 bytes, errno=0
+[2020-05-23 13:16:47 @23.0]     TRACE   swConnection_peek(:246): peek -1/1 bytes, errno=11
+[2020-05-23 13:16:47 @23.0]     TRACE   swConnection_recv(:184): recv 5/8192 bytes, errno=0
+[2020-05-23 13:16:47 @23.0]     TRACE   swTimer_add(:183): id=329, exec_msec=129264, msec=500, round=327, exist=2
+[2020-05-23 13:16:47 @23.0]     TRACE   on_yield(:214): php_coro_yield from cid=1 to cid=-1
+[2020-05-23 13:16:47 #1.4]      TRACE   swTimer_select(:234): timer msec=129001, round=130
+[2020-05-23 13:16:47 #1.4]      TRACE   swTimer_select(:246): id=1, exec_msec=129000, round=0, exist=0
+[2020-05-23 13:16:47 @28.0]     TRACE   swTimer_select(:234): timer msec=129001, round=258
+[2020-05-23 13:16:47 @28.0]     TRACE   swTimer_select(:246): id=1, exec_msec=129000, round=0, exist=0
+[2020-05-23 13:16:47 @28.0]     TRACE   Context(:40): alloc stack: size=2097152, ptr=0x5644c70122e0
+[2020-05-23 13:16:47 @28.0]     TRACE   create_func(:352): Create coro id: 258, origin cid: -1, coro total count: 1, heap size: 3553568
+[2020-05-23 13:16:47 @28.0]     TRACE   on_close(:260): coro close cid=258 and resume to -1, 0 remained. usage size: 3545376. malloc size: 4194304
+[2020-05-23 13:16:47 @28.0]     TRACE   close(:87): coroutine#258 stack memory use less than 65536 bytes
+[2020-05-23 13:16:47 @28.0]     TRACE   ~Context(:71): free stack: ptr=0x5644c70122e0
+[2020-05-23 13:16:47 @21.0]     TRACE   swTimer_select(:234): timer msec=130218, round=132
+[2020-05-23 13:16:47 @21.0]     TRACE   swTimer_select(:246): id=263, exec_msec=130216, round=131, exist=1
+[2020-05-23 13:16:47 @21.0]     TRACE   on_resume(:228): php_coro_resume from cid=-1 to cid=1
+[2020-05-23 13:16:47 @21.0]     TRACE   swTimer_add(:183): id=265, exec_msec=131218, msec=1000, round=132, exist=3
+[2020-05-23 13:16:47 @21.0]     TRACE   on_yield(:214): php_coro_yield from cid=1 to cid=-1
+[2020-05-23 13:16:47 @21.0]     TRACE   swTimer_select(:246): id=264, exec_msec=130217, round=131, exist=1
+[2020-05-23 13:16:47 @21.0]     TRACE   on_resume(:228): php_coro_resume from cid=-1 to cid=2
+[2020-05-23 13:16:47 @21.0]     TRACE   swTimer_add(:183): id=266, exec_msec=131218, msec=1000, round=132, exist=3
+[2020-05-23 13:16:47 @21.0]     TRACE   on_yield(:214): php_coro_yield from cid=2 to cid=-1
+[2020-05-23 13:16:47 @22.0]     TRACE   swTimer_select(:234): timer msec=130278, round=485
+[2020-05-23 13:16:47 @22.0]     TRACE   swTimer_select(:246): id=477, exec_msec=130278, round=484, exist=0
+[2020-05-23 13:16:47 @22.0]     TRACE   on_resume(:228): php_coro_resume from cid=-1 to cid=1
+[2020-05-23 13:16:47 @22.0]     TRACE   swConnection_peek(:246): peek -1/1 bytes, errno=11
+[2020-05-23 13:16:47 @22.0]     TRACE   swConnection_send(:218): send 14/14 bytes, errno=0
+[2020-05-23 13:16:47 @22.0]     TRACE   swConnection_peek(:246): peek -1/1 bytes, errno=11
+[2020-05-23 13:16:47 @22.0]     TRACE   swConnection_recv(:184): recv 7/8192 bytes, errno=0
+[2020-05-23 13:16:47 @22.0]     TRACE   swConnection_peek(:246): peek -1/1 bytes, errno=11
+[2020-05-23 13:16:47 @22.0]     TRACE   swConnection_send(:218): send 46/46 bytes, errno=0
+[2020-05-23 13:16:47 @22.0]     TRACE   swConnection_peek(:246): peek -1/1 bytes, errno=11
+[2020-05-23 13:16:47 @22.0]     TRACE   swConnection_recv(:184): recv 5/8192 bytes, errno=0
+[2020-05-23 13:16:47 @22.0]     TRACE   swTimer_add(:183): id=478, exec_msec=130779, msec=500, round=485, exist=2
+[2020-05-23 13:16:47 @22.0]     TRACE   on_yield(:214): php_coro_yield from cid=1 to cid=-1
+[2020-05-23 13:16:48 @22.0]     TRACE   swTimer_select(:234): timer msec=129220, round=131
+[2020-05-23 13:16:48 @22.0]     TRACE   swTimer_select(:246): id=260, exec_msec=129219, round=130, exist=1
+[2020-05-23 13:16:48 @22.0]     TRACE   on_resume(:228): php_coro_resume from cid=-1 to cid=2
+[2020-05-23 13:16:48 @22.0]     TRACE   swTimer_add(:183): id=261, exec_msec=130220, msec=1000, round=131, exist=3
+[2020-05-23 13:16:48 @22.0]     TRACE   on_yield(:214): php_coro_yield from cid=2 to cid=-1
+[2020-05-23 13:16:48 @22.0]     TRACE   swTimer_select(:246): id=259, exec_msec=129219, round=130, exist=1
+[2020-05-23 13:16:48 @22.0]     TRACE   on_resume(:228): php_coro_resume from cid=-1 to cid=1
+[2020-05-23 13:16:48 @22.0]     TRACE   swTimer_add(:183): id=262, exec_msec=130220, msec=1000, round=131, exist=3
+[2020-05-23 13:16:48 @22.0]     TRACE   on_yield(:214): php_coro_yield from cid=1 to cid=-1
+[2020-05-23 13:16:48 @27.0]     TRACE   swTimer_select(:234): timer msec=129218, round=193
+[2020-05-23 13:16:48 @27.0]     TRACE   swTimer_select(:246): id=361, exec_msec=129218, round=191, exist=2
+[2020-05-23 13:16:48 @27.0]     TRACE   on_resume(:228): php_coro_resume from cid=-1 to cid=1
+[2020-05-23 13:16:48 @27.0]     TRACE   swConnection_peek(:246): peek -1/1 bytes, errno=11
+[2020-05-23 13:16:48 @27.0]     TRACE   swConnection_send(:218): send 14/14 bytes, errno=0
+[2020-05-23 13:16:48 @27.0]     TRACE   swConnection_peek(:246): peek -1/1 bytes, errno=11
+[2020-05-23 13:16:48 @27.0]     TRACE   swConnection_recv(:184): recv 7/8192 bytes, errno=0
+[2020-05-23 13:16:48 @27.0]     TRACE   swConnection_peek(:246): peek -1/1 bytes, errno=11
+[2020-05-23 13:16:48 @27.0]     TRACE   swConnection_send(:218): send 54/54 bytes, errno=0
+[2020-05-23 13:16:48 @27.0]     TRACE   swConnection_peek(:246): peek -1/1 bytes, errno=11
+[2020-05-23 13:16:48 @27.0]     TRACE   swConnection_recv(:184): recv 5/8192 bytes, errno=0
+[2020-05-23 13:16:48 @27.0]     TRACE   swTimer_add(:183): id=363, exec_msec=130219, msec=1000, round=193, exist=4
+[2020-05-23 13:16:48 @27.0]     TRACE   on_yield(:214): php_coro_yield from cid=1 to cid=-1
+[2020-05-23 13:16:48 @27.0]     TRACE   swTimer_select(:246): id=362, exec_msec=129218, round=192, exist=2
+[2020-05-23 13:16:48 @27.0]     TRACE   on_resume(:228): php_coro_resume from cid=-1 to cid=2
+[2020-05-23 13:16:48 @27.0]     TRACE   swConnection_peek(:246): peek -1/1 bytes, errno=11
+[2020-05-23 13:16:48 @27.0]     TRACE   swConnection_send(:218): send 14/14 bytes, errno=0
+[2020-05-23 13:16:48 @27.0]     TRACE   swConnection_peek(:246): peek -1/1 bytes, errno=11
+[2020-05-23 13:16:48 @27.0]     TRACE   swConnection_recv(:184): recv 7/8192 bytes, errno=0
+[2020-05-23 13:16:48 @27.0]     TRACE   swConnection_peek(:246): peek -1/1 bytes, errno=11
+[2020-05-23 13:16:48 @27.0]     TRACE   swConnection_send(:218): send 43/43 bytes, errno=0
+[2020-05-23 13:16:48 @27.0]     TRACE   swConnection_peek(:246): peek -1/1 bytes, errno=11
+[2020-05-23 13:16:48 @27.0]     TRACE   swConnection_recv(:184): recv 5/8192 bytes, errno=0
+[2020-05-23 13:16:48 @27.0]     TRACE   swTimer_add(:183): id=364, exec_msec=130219, msec=1000, round=193, exist=4
+[2020-05-23 13:16:48 @27.0]     TRACE   on_yield(:214): php_coro_yield from cid=2 to cid=-1
+[2020-05-23 13:16:48 @26.0]     TRACE   swTimer_select(:234): timer msec=129252, round=337
+[2020-05-23 13:16:48 @26.0]     TRACE   swTimer_select(:246): id=338, exec_msec=129251, round=336, exist=0
+[2020-05-23 13:16:48 @26.0]     TRACE   on_resume(:228): php_coro_resume from cid=-1 to cid=1
+[2020-05-23 13:16:48 @26.0]     TRACE   swConnection_peek(:246): peek -1/1 bytes, errno=11
+[2020-05-23 13:16:48 @26.0]     TRACE   swConnection_send(:218): send 14/14 bytes, errno=0
+[2020-05-23 13:16:48 @26.0]     TRACE   swConnection_peek(:246): peek -1/1 bytes, errno=11
+[2020-05-23 13:16:48 @26.0]     TRACE   swConnection_recv(:184): recv -1/8192 bytes, errno=11
+[2020-05-23 13:16:48 @26.0]     TRACE   swTimer_add(:183): id=339, exec_msec=189252, msec=60000, round=337, exist=2
+[2020-05-23 13:16:48 @26.0]     TRACE   swReactorEpoll_add(:140): add event[reactor_id=0, fd=5, events=512]
+[2020-05-23 13:16:48 @26.0]     TRACE   wait_event(:146): socket#5 blongs to cid#1 is waiting for READ event
+[2020-05-23 13:16:48 @26.0]     TRACE   on_yield(:214): php_coro_yield from cid=1 to cid=-1
+[2020-05-23 13:16:48 @26.0]     TRACE   on_resume(:228): php_coro_resume from cid=-1 to cid=1
+[2020-05-23 13:16:48 @26.0]     TRACE   swReactorEpoll_del(:155): remove event[reactor_id=0|fd=5]
+[2020-05-23 13:16:48 @26.0]     TRACE   wait_event(:187): socket#5 blongs to cid#1 trigger READ event
+[2020-05-23 13:16:48 @26.0]     TRACE   swConnection_recv(:184): recv 7/8192 bytes, errno=0
+[2020-05-23 13:16:48 @26.0]     TRACE   swTimer_del_ex(:213): id=339, exec_msec=189252, round=337, exist=0
+[2020-05-23 13:16:48 @23.0]     TRACE   swTimer_select(:234): timer msec=129265, round=328
+[2020-05-23 13:16:48 @23.0]     TRACE   swTimer_select(:246): id=329, exec_msec=129264, round=327, exist=0
+[2020-05-23 13:16:48 @23.0]     TRACE   on_resume(:228): php_coro_resume from cid=-1 to cid=1
+[2020-05-23 13:16:48 @26.0]     TRACE   swConnection_peek(:246): peek -1/1 bytes, errno=11
+[2020-05-23 13:16:48 @26.0]     TRACE   swConnection_send(:218): send 36/36 bytes, errno=0
+[2020-05-23 13:16:48 @26.0]     TRACE   swConnection_peek(:246): peek -1/1 bytes, errno=11
+[2020-05-23 13:16:48 @23.0]     TRACE   swConnection_peek(:246): peek -1/1 bytes, errno=11
+[2020-05-23 13:16:48 @26.0]     TRACE   swConnection_recv(:184): recv -1/8192 bytes, errno=11
+[2020-05-23 13:16:48 @26.0]     TRACE   swTimer_add(:183): id=340, exec_msec=189252, msec=60000, round=338, exist=1
+[2020-05-23 13:16:48 @26.0]     TRACE   swReactorEpoll_add(:140): add event[reactor_id=0, fd=5, events=512]
+[2020-05-23 13:16:48 @26.0]     TRACE   wait_event(:146): socket#5 blongs to cid#1 is waiting for READ event
+[2020-05-23 13:16:48 @26.0]     TRACE   on_yield(:214): php_coro_yield from cid=1 to cid=-1
+[2020-05-23 13:16:48 @26.0]     TRACE   swTimer_select(:234): timer msec=129252, round=338
+[2020-05-23 13:16:48 @23.0]     TRACE   swConnection_send(:218): send 14/14 bytes, errno=0
+[2020-05-23 13:16:48 @26.0]     TRACE   on_resume(:228): php_coro_resume from cid=-1 to cid=1
+[2020-05-23 13:16:48 @23.0]     TRACE   swConnection_peek(:246): peek 1/1 bytes, errno=0
+[2020-05-23 13:16:48 @26.0]     TRACE   swReactorEpoll_del(:155): remove event[reactor_id=0|fd=5]
+[2020-05-23 13:16:48 @26.0]     TRACE   wait_event(:187): socket#5 blongs to cid#1 trigger READ event
+[2020-05-23 13:16:48 @23.0]     TRACE   swConnection_recv(:184): recv 7/8192 bytes, errno=0
+[2020-05-23 13:16:48 @26.0]     TRACE   swConnection_recv(:184): recv 5/8192 bytes, errno=0
+[2020-05-23 13:16:48 @26.0]     TRACE   swTimer_del_ex(:213): id=340, exec_msec=189252, round=338, exist=0
+[2020-05-23 13:16:48 @23.0]     TRACE   swConnection_peek(:246): peek -1/1 bytes, errno=11
+[2020-05-23 13:16:48 @26.0]     TRACE   swTimer_add(:183): id=341, exec_msec=129752, msec=500, round=339, exist=1
+[2020-05-23 13:16:48 @26.0]     TRACE   on_yield(:214): php_coro_yield from cid=1 to cid=-1
+[2020-05-23 13:16:48 @26.0]     TRACE   swTimer_select(:234): timer msec=129252, round=339
+[2020-05-23 13:16:48 @23.0]     TRACE   swConnection_send(:218): send 46/46 bytes, errno=0
+[2020-05-23 13:16:48 @23.0]     TRACE   swConnection_peek(:246): peek 1/1 bytes, errno=0
+[2020-05-23 13:16:48 @23.0]     TRACE   swConnection_recv(:184): recv 5/8192 bytes, errno=0
+[2020-05-23 13:16:48 @23.0]     TRACE   swTimer_add(:183): id=330, exec_msec=129765, msec=500, round=328, exist=2
+[2020-05-23 13:16:48 @23.0]     TRACE   on_yield(:214): php_coro_yield from cid=1 to cid=-1
+[2020-05-23 13:16:48 @28.0]     TRACE   swTimer_select(:234): timer msec=129500, round=259
+[2020-05-23 13:16:48 @28.0]     TRACE   swTimer_select(:246): id=1, exec_msec=129500, round=0, exist=0
+[2020-05-23 13:16:48 @28.0]     TRACE   Context(:40): alloc stack: size=2097152, ptr=0x5644c70122e0
+[2020-05-23 13:16:48 @28.0]     TRACE   create_func(:352): Create coro id: 259, origin cid: -1, coro total count: 1, heap size: 3553568
+[2020-05-23 13:16:48 @28.0]     TRACE   on_close(:260): coro close cid=259 and resume to -1, 0 remained. usage size: 3545376. malloc size: 4194304
+[2020-05-23 13:16:48 @28.0]     TRACE   close(:87): coroutine#259 stack memory use less than 65536 bytes
+[2020-05-23 13:16:48 @28.0]     TRACE   ~Context(:71): free stack: ptr=0x5644c70122e0
+[2020-05-23 13:16:48 @22.0]     TRACE   swTimer_select(:234): timer msec=130780, round=486
+[2020-05-23 13:16:48 @22.0]     TRACE   swTimer_select(:246): id=478, exec_msec=130779, round=485, exist=0
+[2020-05-23 13:16:48 @22.0]     TRACE   on_resume(:228): php_coro_resume from cid=-1 to cid=1
+[2020-05-23 13:16:48 @22.0]     TRACE   swConnection_peek(:246): peek -1/1 bytes, errno=11
+[2020-05-23 13:16:48 @22.0]     TRACE   swConnection_send(:218): send 14/14 bytes, errno=0
+[2020-05-23 13:16:48 @22.0]     TRACE   swConnection_peek(:246): peek -1/1 bytes, errno=11
+[2020-05-23 13:16:48 @22.0]     TRACE   swConnection_recv(:184): recv -1/8192 bytes, errno=11
+[2020-05-23 13:16:48 @22.0]     TRACE   swTimer_add(:183): id=479, exec_msec=190780, msec=60000, round=486, exist=2
+[2020-05-23 13:16:48 @22.0]     TRACE   swReactorEpoll_add(:140): add event[reactor_id=0, fd=5, events=512]
+[2020-05-23 13:16:48 @22.0]     TRACE   wait_event(:146): socket#5 blongs to cid#1 is waiting for READ event
+[2020-05-23 13:16:48 @22.0]     TRACE   on_yield(:214): php_coro_yield from cid=1 to cid=-1
+[2020-05-23 13:16:48 @22.0]     TRACE   on_resume(:228): php_coro_resume from cid=-1 to cid=1
+[2020-05-23 13:16:48 @22.0]     TRACE   swReactorEpoll_del(:155): remove event[reactor_id=0|fd=5]
+[2020-05-23 13:16:48 @22.0]     TRACE   wait_event(:187): socket#5 blongs to cid#1 trigger READ event
+[2020-05-23 13:16:48 @22.0]     TRACE   swConnection_recv(:184): recv 7/8192 bytes, errno=0
+[2020-05-23 13:16:48 @22.0]     TRACE   swTimer_del_ex(:213): id=479, exec_msec=190780, round=486, exist=0
+[2020-05-23 13:16:48 @22.0]     TRACE   swConnection_peek(:246): peek -1/1 bytes, errno=11
+[2020-05-23 13:16:48 @22.0]     TRACE   swConnection_send(:218): send 46/46 bytes, errno=0
+[2020-05-23 13:16:48 @22.0]     TRACE   swConnection_peek(:246): peek -1/1 bytes, errno=11
+[2020-05-23 13:16:48 @22.0]     TRACE   swConnection_recv(:184): recv -1/8192 bytes, errno=11
+[2020-05-23 13:16:48 @22.0]     TRACE   swTimer_add(:183): id=480, exec_msec=190780, msec=60000, round=487, exist=1
+[2020-05-23 13:16:48 @22.0]     TRACE   swReactorEpoll_add(:140): add event[reactor_id=0, fd=5, events=512]
+[2020-05-23 13:16:48 @22.0]     TRACE   wait_event(:146): socket#5 blongs to cid#1 is waiting for READ event
+[2020-05-23 13:16:48 @22.0]     TRACE   on_yield(:214): php_coro_yield from cid=1 to cid=-1
+[2020-05-23 13:16:48 @22.0]     TRACE   swTimer_select(:234): timer msec=130780, round=487
+[2020-05-23 13:16:48 @22.0]     TRACE   on_resume(:228): php_coro_resume from cid=-1 to cid=1
+[2020-05-23 13:16:48 @22.0]     TRACE   swReactorEpoll_del(:155): remove event[reactor_id=0|fd=5]
+[2020-05-23 13:16:48 @22.0]     TRACE   wait_event(:187): socket#5 blongs to cid#1 trigger READ event
+[2020-05-23 13:16:48 @22.0]     TRACE   swConnection_recv(:184): recv 5/8192 bytes, errno=0
+[2020-05-23 13:16:48 @22.0]     TRACE   swTimer_del_ex(:213): id=480, exec_msec=190780, round=487, exist=0
+[2020-05-23 13:16:48 @22.0]     TRACE   swTimer_add(:183): id=481, exec_msec=131281, msec=500, round=488, exist=1
+[2020-05-23 13:16:48 @22.0]     TRACE   on_yield(:214): php_coro_yield from cid=1 to cid=-1
+[2020-05-23 13:16:48 @22.0]     TRACE   swTimer_select(:234): timer msec=130781, round=488
+[2020-05-23 13:16:48 #1.4]      TRACE   swTimer_select(:234): timer msec=131001, round=132
+[2020-05-23 13:16:48 #1.4]      TRACE   swTimer_select(:246): id=1, exec_msec=131000, round=0, exist=0
+[2020-05-23 13:16:48 @26.0]     TRACE   swTimer_select(:234): timer msec=129753, round=340
+[2020-05-23 13:16:48 @26.0]     TRACE   swTimer_select(:246): id=341, exec_msec=129752, round=339, exist=0
+[2020-05-23 13:16:48 @26.0]     TRACE   on_resume(:228): php_coro_resume from cid=-1 to cid=1
+[2020-05-23 13:16:48 @26.0]     TRACE   swConnection_peek(:246): peek -1/1 bytes, errno=11
+[2020-05-23 13:16:48 @26.0]     TRACE   swConnection_send(:218): send 14/14 bytes, errno=0
+[2020-05-23 13:16:48 @26.0]     TRACE   swConnection_peek(:246): peek -1/1 bytes, errno=11
+[2020-05-23 13:16:48 @26.0]     TRACE   swConnection_recv(:184): recv -1/8192 bytes, errno=11
+[2020-05-23 13:16:48 @26.0]     TRACE   swTimer_add(:183): id=342, exec_msec=189753, msec=60000, round=340, exist=2
+[2020-05-23 13:16:48 @26.0]     TRACE   swReactorEpoll_add(:140): add event[reactor_id=0, fd=5, events=512]
+[2020-05-23 13:16:48 @26.0]     TRACE   wait_event(:146): socket#5 blongs to cid#1 is waiting for READ event
+[2020-05-23 13:16:48 @26.0]     TRACE   on_yield(:214): php_coro_yield from cid=1 to cid=-1
+[2020-05-23 13:16:48 @23.0]     TRACE   swTimer_select(:234): timer msec=129766, round=329
+[2020-05-23 13:16:48 @23.0]     TRACE   swTimer_select(:246): id=330, exec_msec=129765, round=328, exist=0
+[2020-05-23 13:16:48 @23.0]     TRACE   on_resume(:228): php_coro_resume from cid=-1 to cid=1
+[2020-05-23 13:16:48 @26.0]     TRACE   on_resume(:228): php_coro_resume from cid=-1 to cid=1
+[2020-05-23 13:16:48 @26.0]     TRACE   swReactorEpoll_del(:155): remove event[reactor_id=0|fd=5]
+[2020-05-23 13:16:48 @26.0]     TRACE   wait_event(:187): socket#5 blongs to cid#1 trigger READ event
+[2020-05-23 13:16:48 @23.0]     TRACE   swConnection_peek(:246): peek -1/1 bytes, errno=11
+[2020-05-23 13:16:48 @23.0]     TRACE   swConnection_send(:218): send 14/14 bytes, errno=0
+[2020-05-23 13:16:48 @23.0]     TRACE   swConnection_peek(:246): peek -1/1 bytes, errno=11
+[2020-05-23 13:16:48 @23.0]     TRACE   swConnection_recv(:184): recv -1/8192 bytes, errno=11
+[2020-05-23 13:16:48 @23.0]     TRACE   swTimer_add(:183): id=331, exec_msec=189766, msec=60000, round=329, exist=2
+[2020-05-23 13:16:48 @23.0]     TRACE   swReactorEpoll_add(:140): add event[reactor_id=0, fd=5, events=512]
+[2020-05-23 13:16:48 @23.0]     TRACE   wait_event(:146): socket#5 blongs to cid#1 is waiting for READ event
+[2020-05-23 13:16:48 @23.0]     TRACE   on_yield(:214): php_coro_yield from cid=1 to cid=-1
+[2020-05-23 13:16:48 @26.0]     TRACE   swConnection_recv(:184): recv 7/8192 bytes, errno=0
+[2020-05-23 13:16:48 @26.0]     TRACE   swTimer_del_ex(:213): id=342, exec_msec=189753, round=340, exist=0
+[2020-05-23 13:16:48 @26.0]     TRACE   swConnection_peek(:246): peek -1/1 bytes, errno=11
+[2020-05-23 13:16:48 @26.0]     TRACE   swConnection_send(:218): send 36/36 bytes, errno=0
+[2020-05-23 13:16:48 @26.0]     TRACE   swConnection_peek(:246): peek -1/1 bytes, errno=11
+[2020-05-23 13:16:48 @26.0]     TRACE   swConnection_recv(:184): recv -1/8192 bytes, errno=11
+[2020-05-23 13:16:48 @26.0]     TRACE   swTimer_add(:183): id=343, exec_msec=189753, msec=60000, round=341, exist=1
+[2020-05-23 13:16:48 @26.0]     TRACE   swReactorEpoll_add(:140): add event[reactor_id=0, fd=5, events=512]
+[2020-05-23 13:16:48 @26.0]     TRACE   wait_event(:146): socket#5 blongs to cid#1 is waiting for READ event
+[2020-05-23 13:16:48 @26.0]     TRACE   on_yield(:214): php_coro_yield from cid=1 to cid=-1
+[2020-05-23 13:16:48 @26.0]     TRACE   swTimer_select(:234): timer msec=129753, round=341
+[2020-05-23 13:16:48 @23.0]     TRACE   on_resume(:228): php_coro_resume from cid=-1 to cid=1
+[2020-05-23 13:16:48 @23.0]     TRACE   swReactorEpoll_del(:155): remove event[reactor_id=0|fd=5]
+[2020-05-23 13:16:48 @23.0]     TRACE   wait_event(:187): socket#5 blongs to cid#1 trigger READ event
+[2020-05-23 13:16:48 @23.0]     TRACE   swConnection_recv(:184): recv 7/8192 bytes, errno=0
+[2020-05-23 13:16:48 @23.0]     TRACE   swTimer_del_ex(:213): id=331, exec_msec=189766, round=329, exist=0
+[2020-05-23 13:16:48 @23.0]     TRACE   swConnection_peek(:246): peek -1/1 bytes, errno=11
+[2020-05-23 13:16:48 @23.0]     TRACE   swConnection_send(:218): send 46/46 bytes, errno=0
+[2020-05-23 13:16:48 @23.0]     TRACE   swConnection_peek(:246): peek -1/1 bytes, errno=11
+[2020-05-23 13:16:48 @23.0]     TRACE   swConnection_recv(:184): recv -1/8192 bytes, errno=11
+[2020-05-23 13:16:48 @23.0]     TRACE   swTimer_add(:183): id=332, exec_msec=189767, msec=60000, round=330, exist=1
+[2020-05-23 13:16:48 @23.0]     TRACE   swReactorEpoll_add(:140): add event[reactor_id=0, fd=5, events=512]
+[2020-05-23 13:16:48 @23.0]     TRACE   wait_event(:146): socket#5 blongs to cid#1 is waiting for READ event
+[2020-05-23 13:16:48 @23.0]     TRACE   on_yield(:214): php_coro_yield from cid=1 to cid=-1
+[2020-05-23 13:16:48 @23.0]     TRACE   swTimer_select(:234): timer msec=129767, round=330
+[2020-05-23 13:16:48 @26.0]     TRACE   on_resume(:228): php_coro_resume from cid=-1 to cid=1
+[2020-05-23 13:16:48 @26.0]     TRACE   swReactorEpoll_del(:155): remove event[reactor_id=0|fd=5]
+[2020-05-23 13:16:48 @26.0]     TRACE   wait_event(:187): socket#5 blongs to cid#1 trigger READ event
+[2020-05-23 13:16:48 @26.0]     TRACE   swConnection_recv(:184): recv 5/8192 bytes, errno=0
+[2020-05-23 13:16:48 @26.0]     TRACE   swTimer_del_ex(:213): id=343, exec_msec=189753, round=341, exist=0
+[2020-05-23 13:16:48 @26.0]     TRACE   swTimer_add(:183): id=344, exec_msec=130254, msec=500, round=342, exist=1
+[2020-05-23 13:16:48 @26.0]     TRACE   on_yield(:214): php_coro_yield from cid=1 to cid=-1
+[2020-05-23 13:16:48 @26.0]     TRACE   swTimer_select(:234): timer msec=129754, round=342
+[2020-05-23 13:16:48 @23.0]     TRACE   on_resume(:228): php_coro_resume from cid=-1 to cid=1
+[2020-05-23 13:16:48 @23.0]     TRACE   swReactorEpoll_del(:155): remove event[reactor_id=0|fd=5]
+[2020-05-23 13:16:48 @23.0]     TRACE   wait_event(:187): socket#5 blongs to cid#1 trigger READ event
+[2020-05-23 13:16:48 @23.0]     TRACE   swConnection_recv(:184): recv 5/8192 bytes, errno=0
+[2020-05-23 13:16:48 @23.0]     TRACE   swTimer_del_ex(:213): id=332, exec_msec=189767, round=330, exist=0
+[2020-05-23 13:16:48 @23.0]     TRACE   swTimer_add(:183): id=333, exec_msec=130267, msec=500, round=331, exist=1
+[2020-05-23 13:16:48 @23.0]     TRACE   on_yield(:214): php_coro_yield from cid=1 to cid=-1
+[2020-05-23 13:16:48 @23.0]     TRACE   swTimer_select(:234): timer msec=129767, round=331
+[2020-05-23 13:16:48 #1.4]      TRACE   swTimer_select(:234): timer msec=130001, round=131
+[2020-05-23 13:16:48 #1.4]      TRACE   swTimer_select(:246): id=1, exec_msec=130000, round=0, exist=0
+[2020-05-23 13:16:48 @28.0]     TRACE   swTimer_select(:234): timer msec=130001, round=260
+[2020-05-23 13:16:48 @28.0]     TRACE   swTimer_select(:246): id=1, exec_msec=130000, round=0, exist=0
+[2020-05-23 13:16:48 @28.0]     TRACE   Context(:40): alloc stack: size=2097152, ptr=0x5644c70122e0
+[2020-05-23 13:16:48 @28.0]     TRACE   create_func(:352): Create coro id: 260, origin cid: -1, coro total count: 1, heap size: 3553568
+[2020-05-23 13:16:48 @28.0]     TRACE   on_close(:260): coro close cid=260 and resume to -1, 0 remained. usage size: 3545376. malloc size: 4194304
+[2020-05-23 13:16:48 @28.0]     TRACE   close(:87): coroutine#260 stack memory use less than 65536 bytes
+[2020-05-23 13:16:48 @28.0]     TRACE   ~Context(:71): free stack: ptr=0x5644c70122e0
+[2020-05-23 13:16:48 @21.0]     TRACE   swTimer_select(:234): timer msec=131219, round=133
+[2020-05-23 13:16:48 @21.0]     TRACE   swTimer_select(:246): id=266, exec_msec=131218, round=132, exist=1
+[2020-05-23 13:16:48 @21.0]     TRACE   on_resume(:228): php_coro_resume from cid=-1 to cid=2
+[2020-05-23 13:16:48 @21.0]     TRACE   swTimer_add(:183): id=267, exec_msec=132219, msec=1000, round=133, exist=3
+[2020-05-23 13:16:48 @21.0]     TRACE   on_yield(:214): php_coro_yield from cid=2 to cid=-1
+[2020-05-23 13:16:48 @21.0]     TRACE   swTimer_select(:246): id=265, exec_msec=131218, round=132, exist=1
+[2020-05-23 13:16:48 @21.0]     TRACE   on_resume(:228): php_coro_resume from cid=-1 to cid=1
+[2020-05-23 13:16:48 @21.0]     TRACE   swTimer_add(:183): id=268, exec_msec=132220, msec=1000, round=133, exist=3
+[2020-05-23 13:16:48 @21.0]     TRACE   on_yield(:214): php_coro_yield from cid=1 to cid=-1
+[2020-05-23 13:16:48 @22.0]     TRACE   swTimer_select(:234): timer msec=131281, round=489
+[2020-05-23 13:16:48 @22.0]     TRACE   swTimer_select(:246): id=481, exec_msec=131281, round=488, exist=0
+[2020-05-23 13:16:48 @22.0]     TRACE   on_resume(:228): php_coro_resume from cid=-1 to cid=1
+[2020-05-23 13:16:48 @22.0]     TRACE   swConnection_peek(:246): peek -1/1 bytes, errno=11
+[2020-05-23 13:16:48 @22.0]     TRACE   swConnection_send(:218): send 14/14 bytes, errno=0
+[2020-05-23 13:16:48 @22.0]     TRACE   swConnection_peek(:246): peek -1/1 bytes, errno=11
+[2020-05-23 13:16:48 @22.0]     TRACE   swConnection_recv(:184): recv 7/8192 bytes, errno=0
+[2020-05-23 13:16:48 @22.0]     TRACE   swConnection_peek(:246): peek -1/1 bytes, errno=11
+[2020-05-23 13:16:48 @22.0]     TRACE   swConnection_send(:218): send 46/46 bytes, errno=0
+[2020-05-23 13:16:48 @22.0]     TRACE   swConnection_peek(:246): peek -1/1 bytes, errno=11
+[2020-05-23 13:16:48 @22.0]     TRACE   swConnection_recv(:184): recv 5/8192 bytes, errno=0
+[2020-05-23 13:16:48 @22.0]     TRACE   swTimer_add(:183): id=482, exec_msec=131781, msec=500, round=489, exist=2
+[2020-05-23 13:16:48 @22.0]     TRACE   on_yield(:214): php_coro_yield from cid=1 to cid=-1
+[2020-05-23 13:16:49 @22.0]     TRACE   swTimer_select(:234): timer msec=130221, round=132
+[2020-05-23 13:16:49 @22.0]     TRACE   swTimer_select(:246): id=262, exec_msec=130220, round=131, exist=1
+[2020-05-23 13:16:49 @22.0]     TRACE   on_resume(:228): php_coro_resume from cid=-1 to cid=1
+[2020-05-23 13:16:49 @22.0]     TRACE   swTimer_add(:183): id=263, exec_msec=131222, msec=1000, round=132, exist=3
+[2020-05-23 13:16:49 @22.0]     TRACE   on_yield(:214): php_coro_yield from cid=1 to cid=-1
+[2020-05-23 13:16:49 @22.0]     TRACE   swTimer_select(:246): id=261, exec_msec=130220, round=131, exist=1
+[2020-05-23 13:16:49 @22.0]     TRACE   on_resume(:228): php_coro_resume from cid=-1 to cid=2
+[2020-05-23 13:16:49 @22.0]     TRACE   swTimer_add(:183): id=264, exec_msec=131222, msec=1000, round=132, exist=3
+[2020-05-23 13:16:49 @22.0]     TRACE   on_yield(:214): php_coro_yield from cid=2 to cid=-1
+[2020-05-23 13:16:49 @27.0]     TRACE   swTimer_select(:234): timer msec=130221, round=194
+[2020-05-23 13:16:49 @27.0]     TRACE   swTimer_select(:246): id=364, exec_msec=130219, round=193, exist=2
+[2020-05-23 13:16:49 @27.0]     TRACE   on_resume(:228): php_coro_resume from cid=-1 to cid=2
+[2020-05-23 13:16:49 @27.0]     TRACE   swConnection_peek(:246): peek -1/1 bytes, errno=11
+[2020-05-23 13:16:49 @27.0]     TRACE   swConnection_send(:218): send 14/14 bytes, errno=0
+[2020-05-23 13:16:49 @27.0]     TRACE   swConnection_peek(:246): peek -1/1 bytes, errno=11
+[2020-05-23 13:16:49 @27.0]     TRACE   swConnection_recv(:184): recv 7/8192 bytes, errno=0
+[2020-05-23 13:16:49 @27.0]     TRACE   swConnection_peek(:246): peek -1/1 bytes, errno=11
+[2020-05-23 13:16:49 @27.0]     TRACE   swConnection_send(:218): send 43/43 bytes, errno=0
+[2020-05-23 13:16:49 @27.0]     TRACE   swConnection_peek(:246): peek -1/1 bytes, errno=11
+[2020-05-23 13:16:49 @27.0]     TRACE   swConnection_recv(:184): recv 5/8192 bytes, errno=0
+[2020-05-23 13:16:49 @27.0]     TRACE   swTimer_add(:183): id=365, exec_msec=131221, msec=1000, round=194, exist=4
+[2020-05-23 13:16:49 @27.0]     TRACE   on_yield(:214): php_coro_yield from cid=2 to cid=-1
+[2020-05-23 13:16:49 @27.0]     TRACE   swTimer_select(:246): id=363, exec_msec=130219, round=193, exist=2
+[2020-05-23 13:16:49 @27.0]     TRACE   on_resume(:228): php_coro_resume from cid=-1 to cid=1
+[2020-05-23 13:16:49 @27.0]     TRACE   swConnection_peek(:246): peek -1/1 bytes, errno=11
+[2020-05-23 13:16:49 @27.0]     TRACE   swConnection_send(:218): send 14/14 bytes, errno=0
+[2020-05-23 13:16:49 @27.0]     TRACE   swConnection_peek(:246): peek -1/1 bytes, errno=11
+[2020-05-23 13:16:49 @27.0]     TRACE   swConnection_recv(:184): recv 7/8192 bytes, errno=0
+[2020-05-23 13:16:49 @27.0]     TRACE   swConnection_peek(:246): peek -1/1 bytes, errno=11
+[2020-05-23 13:16:49 @27.0]     TRACE   swConnection_send(:218): send 54/54 bytes, errno=0
+[2020-05-23 13:16:49 @27.0]     TRACE   swConnection_peek(:246): peek -1/1 bytes, errno=11
+[2020-05-23 13:16:49 @27.0]     TRACE   swConnection_recv(:184): recv 5/8192 bytes, errno=0
+[2020-05-23 13:16:49 @27.0]     TRACE   swTimer_add(:183): id=366, exec_msec=131221, msec=1000, round=194, exist=4
+[2020-05-23 13:16:49 @27.0]     TRACE   on_yield(:214): php_coro_yield from cid=1 to cid=-1
+[2020-05-23 13:16:49 @23.0]     TRACE   swTimer_select(:234): timer msec=130267, round=332
+[2020-05-23 13:16:49 @23.0]     TRACE   swTimer_select(:246): id=333, exec_msec=130267, round=331, exist=0
+[2020-05-23 13:16:49 @23.0]     TRACE   on_resume(:228): php_coro_resume from cid=-1 to cid=1
+[2020-05-23 13:16:49 @23.0]     TRACE   swConnection_peek(:246): peek -1/1 bytes, errno=11
+[2020-05-23 13:16:49 @23.0]     TRACE   swConnection_send(:218): send 14/14 bytes, errno=0
+[2020-05-23 13:16:49 @23.0]     TRACE   swConnection_peek(:246): peek -1/1 bytes, errno=11
+[2020-05-23 13:16:49 @23.0]     TRACE   swConnection_recv(:184): recv -1/8192 bytes, errno=11
+[2020-05-23 13:16:49 @23.0]     TRACE   swTimer_add(:183): id=334, exec_msec=190267, msec=60000, round=332, exist=2
+[2020-05-23 13:16:49 @23.0]     TRACE   swReactorEpoll_add(:140): add event[reactor_id=0, fd=5, events=512]
+[2020-05-23 13:16:49 @23.0]     TRACE   wait_event(:146): socket#5 blongs to cid#1 is waiting for READ event
+[2020-05-23 13:16:49 @23.0]     TRACE   on_yield(:214): php_coro_yield from cid=1 to cid=-1
+[2020-05-23 13:16:49 @26.0]     TRACE   swTimer_select(:234): timer msec=130254, round=343
+[2020-05-23 13:16:49 @26.0]     TRACE   swTimer_select(:246): id=344, exec_msec=130254, round=342, exist=0
+[2020-05-23 13:16:49 @26.0]     TRACE   on_resume(:228): php_coro_resume from cid=-1 to cid=1
+[2020-05-23 13:16:49 @26.0]     TRACE   swConnection_peek(:246): peek -1/1 bytes, errno=11
+[2020-05-23 13:16:49 @26.0]     TRACE   swConnection_send(:218): send 14/14 bytes, errno=0
+[2020-05-23 13:16:49 @26.0]     TRACE   swConnection_peek(:246): peek -1/1 bytes, errno=11
+[2020-05-23 13:16:49 @26.0]     TRACE   swConnection_recv(:184): recv -1/8192 bytes, errno=11
+[2020-05-23 13:16:49 @26.0]     TRACE   swTimer_add(:183): id=345, exec_msec=190254, msec=60000, round=343, exist=2
+[2020-05-23 13:16:49 @26.0]     TRACE   swReactorEpoll_add(:140): add event[reactor_id=0, fd=5, events=512]
+[2020-05-23 13:16:49 @26.0]     TRACE   wait_event(:146): socket#5 blongs to cid#1 is waiting for READ event
+[2020-05-23 13:16:49 @26.0]     TRACE   on_yield(:214): php_coro_yield from cid=1 to cid=-1
+[2020-05-23 13:16:49 @23.0]     TRACE   on_resume(:228): php_coro_resume from cid=-1 to cid=1
+[2020-05-23 13:16:49 @23.0]     TRACE   swReactorEpoll_del(:155): remove event[reactor_id=0|fd=5]
+[2020-05-23 13:16:49 @23.0]     TRACE   wait_event(:187): socket#5 blongs to cid#1 trigger READ event
+[2020-05-23 13:16:49 @23.0]     TRACE   swConnection_recv(:184): recv 7/8192 bytes, errno=0
+[2020-05-23 13:16:49 @23.0]     TRACE   swTimer_del_ex(:213): id=334, exec_msec=190267, round=332, exist=0
+[2020-05-23 13:16:49 @23.0]     TRACE   swConnection_peek(:246): peek -1/1 bytes, errno=11
+[2020-05-23 13:16:49 @23.0]     TRACE   swConnection_send(:218): send 46/46 bytes, errno=0
+[2020-05-23 13:16:49 @23.0]     TRACE   swConnection_peek(:246): peek -1/1 bytes, errno=11
+[2020-05-23 13:16:49 @23.0]     TRACE   swConnection_recv(:184): recv -1/8192 bytes, errno=11
+[2020-05-23 13:16:49 @23.0]     TRACE   swTimer_add(:183): id=335, exec_msec=190268, msec=60000, round=333, exist=1
+[2020-05-23 13:16:49 @23.0]     TRACE   swReactorEpoll_add(:140): add event[reactor_id=0, fd=5, events=512]
+[2020-05-23 13:16:49 @23.0]     TRACE   wait_event(:146): socket#5 blongs to cid#1 is waiting for READ event
+[2020-05-23 13:16:49 @23.0]     TRACE   on_yield(:214): php_coro_yield from cid=1 to cid=-1
+[2020-05-23 13:16:49 @23.0]     TRACE   swTimer_select(:234): timer msec=130268, round=333
+[2020-05-23 13:16:49 @26.0]     TRACE   on_resume(:228): php_coro_resume from cid=-1 to cid=1
+[2020-05-23 13:16:49 @26.0]     TRACE   swReactorEpoll_del(:155): remove event[reactor_id=0|fd=5]
+[2020-05-23 13:16:49 @26.0]     TRACE   wait_event(:187): socket#5 blongs to cid#1 trigger READ event
+[2020-05-23 13:16:49 @26.0]     TRACE   swConnection_recv(:184): recv 7/8192 bytes, errno=0
+[2020-05-23 13:16:49 @26.0]     TRACE   swTimer_del_ex(:213): id=345, exec_msec=190254, round=343, exist=0
+[2020-05-23 13:16:49 @26.0]     TRACE   swConnection_peek(:246): peek -1/1 bytes, errno=11
+[2020-05-23 13:16:49 @26.0]     TRACE   swConnection_send(:218): send 36/36 bytes, errno=0
+[2020-05-23 13:16:49 @26.0]     TRACE   swConnection_peek(:246): peek -1/1 bytes, errno=11
+[2020-05-23 13:16:49 @26.0]     TRACE   swConnection_recv(:184): recv -1/8192 bytes, errno=11
+[2020-05-23 13:16:49 @26.0]     TRACE   swTimer_add(:183): id=346, exec_msec=190255, msec=60000, round=344, exist=1
+[2020-05-23 13:16:49 @26.0]     TRACE   swReactorEpoll_add(:140): add event[reactor_id=0, fd=5, events=512]
+[2020-05-23 13:16:49 @26.0]     TRACE   wait_event(:146): socket#5 blongs to cid#1 is waiting for READ event
+[2020-05-23 13:16:49 @26.0]     TRACE   on_yield(:214): php_coro_yield from cid=1 to cid=-1
+[2020-05-23 13:16:49 @26.0]     TRACE   swTimer_select(:234): timer msec=130255, round=344
+[2020-05-23 13:16:49 @23.0]     TRACE   on_resume(:228): php_coro_resume from cid=-1 to cid=1
+[2020-05-23 13:16:49 @23.0]     TRACE   swReactorEpoll_del(:155): remove event[reactor_id=0|fd=5]
+[2020-05-23 13:16:49 @23.0]     TRACE   wait_event(:187): socket#5 blongs to cid#1 trigger READ event
+[2020-05-23 13:16:49 @23.0]     TRACE   swConnection_recv(:184): recv 5/8192 bytes, errno=0
+[2020-05-23 13:16:49 @23.0]     TRACE   swTimer_del_ex(:213): id=335, exec_msec=190268, round=333, exist=0
+[2020-05-23 13:16:49 @23.0]     TRACE   swTimer_add(:183): id=336, exec_msec=130768, msec=500, round=334, exist=1
+[2020-05-23 13:16:49 @23.0]     TRACE   on_yield(:214): php_coro_yield from cid=1 to cid=-1
+[2020-05-23 13:16:49 @23.0]     TRACE   swTimer_select(:234): timer msec=130268, round=334
+[2020-05-23 13:16:49 @26.0]     TRACE   on_resume(:228): php_coro_resume from cid=-1 to cid=1
+[2020-05-23 13:16:49 @26.0]     TRACE   swReactorEpoll_del(:155): remove event[reactor_id=0|fd=5]
+[2020-05-23 13:16:49 @26.0]     TRACE   wait_event(:187): socket#5 blongs to cid#1 trigger READ event
+[2020-05-23 13:16:49 @26.0]     TRACE   swConnection_recv(:184): recv 5/8192 bytes, errno=0
+[2020-05-23 13:16:49 @26.0]     TRACE   swTimer_del_ex(:213): id=346, exec_msec=190255, round=344, exist=0
+[2020-05-23 13:16:49 @26.0]     TRACE   swTimer_add(:183): id=347, exec_msec=130755, msec=500, round=345, exist=1
+[2020-05-23 13:16:49 @26.0]     TRACE   on_yield(:214): php_coro_yield from cid=1 to cid=-1
+[2020-05-23 13:16:49 @26.0]     TRACE   swTimer_select(:234): timer msec=130255, round=345
+[2020-05-23 13:16:49 @28.0]     TRACE   swTimer_select(:234): timer msec=130501, round=261
+[2020-05-23 13:16:49 @28.0]     TRACE   swTimer_select(:246): id=1, exec_msec=130500, round=0, exist=0
+[2020-05-23 13:16:49 @28.0]     TRACE   Context(:40): alloc stack: size=2097152, ptr=0x5644c70122e0
+[2020-05-23 13:16:49 @28.0]     TRACE   create_func(:352): Create coro id: 261, origin cid: -1, coro total count: 1, heap size: 3553568
+[2020-05-23 13:16:49 @28.0]     TRACE   on_close(:260): coro close cid=261 and resume to -1, 0 remained. usage size: 3545376. malloc size: 4194304
+[2020-05-23 13:16:49 @28.0]     TRACE   close(:87): coroutine#261 stack memory use less than 65536 bytes
+[2020-05-23 13:16:49 @28.0]     TRACE   ~Context(:71): free stack: ptr=0x5644c70122e0
+[2020-05-23 13:16:49 @22.0]     TRACE   swTimer_select(:234): timer msec=131782, round=490
+[2020-05-23 13:16:49 @22.0]     TRACE   swTimer_select(:246): id=482, exec_msec=131781, round=489, exist=0
+[2020-05-23 13:16:49 @22.0]     TRACE   on_resume(:228): php_coro_resume from cid=-1 to cid=1
+[2020-05-23 13:16:49 @22.0]     TRACE   swConnection_peek(:246): peek -1/1 bytes, errno=11
+[2020-05-23 13:16:49 @22.0]     TRACE   swConnection_send(:218): send 14/14 bytes, errno=0
+[2020-05-23 13:16:49 @22.0]     TRACE   swConnection_peek(:246): peek -1/1 bytes, errno=11
+[2020-05-23 13:16:49 @22.0]     TRACE   swConnection_recv(:184): recv 7/8192 bytes, errno=0
+[2020-05-23 13:16:49 @22.0]     TRACE   swConnection_peek(:246): peek -1/1 bytes, errno=11
+[2020-05-23 13:16:49 @22.0]     TRACE   swConnection_send(:218): send 46/46 bytes, errno=0
+[2020-05-23 13:16:49 @22.0]     TRACE   swConnection_peek(:246): peek -1/1 bytes, errno=11
+[2020-05-23 13:16:49 @22.0]     TRACE   swConnection_recv(:184): recv 5/8192 bytes, errno=0
+[2020-05-23 13:16:49 @22.0]     TRACE   swTimer_add(:183): id=483, exec_msec=132282, msec=500, round=490, exist=2
+[2020-05-23 13:16:49 @22.0]     TRACE   on_yield(:214): php_coro_yield from cid=1 to cid=-1
+[2020-05-23 13:16:49 #1.4]      TRACE   swTimer_select(:234): timer msec=132001, round=133
+[2020-05-23 13:16:49 #1.4]      TRACE   swTimer_select(:246): id=1, exec_msec=132000, round=0, exist=0
+[2020-05-23 13:16:49 @23.0]     TRACE   swTimer_select(:234): timer msec=130769, round=335
+[2020-05-23 13:16:49 @23.0]     TRACE   swTimer_select(:246): id=336, exec_msec=130768, round=334, exist=0
+[2020-05-23 13:16:49 @23.0]     TRACE   on_resume(:228): php_coro_resume from cid=-1 to cid=1
+[2020-05-23 13:16:49 @23.0]     TRACE   swConnection_peek(:246): peek -1/1 bytes, errno=11
+[2020-05-23 13:16:49 @23.0]     TRACE   swConnection_send(:218): send 14/14 bytes, errno=0
+[2020-05-23 13:16:49 @23.0]     TRACE   swConnection_peek(:246): peek -1/1 bytes, errno=11
+[2020-05-23 13:16:49 @23.0]     TRACE   swConnection_recv(:184): recv -1/8192 bytes, errno=11
+[2020-05-23 13:16:49 @23.0]     TRACE   swTimer_add(:183): id=337, exec_msec=190769, msec=60000, round=335, exist=2
+[2020-05-23 13:16:49 @23.0]     TRACE   swReactorEpoll_add(:140): add event[reactor_id=0, fd=5, events=512]
+[2020-05-23 13:16:49 @23.0]     TRACE   wait_event(:146): socket#5 blongs to cid#1 is waiting for READ event
+[2020-05-23 13:16:49 @23.0]     TRACE   on_yield(:214): php_coro_yield from cid=1 to cid=-1
+[2020-05-23 13:16:49 @26.0]     TRACE   swTimer_select(:234): timer msec=130756, round=346
+[2020-05-23 13:16:49 @26.0]     TRACE   swTimer_select(:246): id=347, exec_msec=130755, round=345, exist=0
+[2020-05-23 13:16:49 @26.0]     TRACE   on_resume(:228): php_coro_resume from cid=-1 to cid=1
+[2020-05-23 13:16:49 @26.0]     TRACE   swConnection_peek(:246): peek -1/1 bytes, errno=11
+[2020-05-23 13:16:49 @26.0]     TRACE   swConnection_send(:218): send 14/14 bytes, errno=0
+[2020-05-23 13:16:49 @26.0]     TRACE   swConnection_peek(:246): peek -1/1 bytes, errno=11
+[2020-05-23 13:16:49 @26.0]     TRACE   swConnection_recv(:184): recv -1/8192 bytes, errno=11
+[2020-05-23 13:16:49 @26.0]     TRACE   swTimer_add(:183): id=348, exec_msec=190756, msec=60000, round=346, exist=2
+[2020-05-23 13:16:49 @26.0]     TRACE   swReactorEpoll_add(:140): add event[reactor_id=0, fd=5, events=512]
+[2020-05-23 13:16:49 @26.0]     TRACE   wait_event(:146): socket#5 blongs to cid#1 is waiting for READ event
+[2020-05-23 13:16:49 @26.0]     TRACE   on_yield(:214): php_coro_yield from cid=1 to cid=-1
+[2020-05-23 13:16:49 @23.0]     TRACE   on_resume(:228): php_coro_resume from cid=-1 to cid=1
+[2020-05-23 13:16:49 @23.0]     TRACE   swReactorEpoll_del(:155): remove event[reactor_id=0|fd=5]
+[2020-05-23 13:16:49 @23.0]     TRACE   wait_event(:187): socket#5 blongs to cid#1 trigger READ event
+[2020-05-23 13:16:49 @23.0]     TRACE   swConnection_recv(:184): recv 7/8192 bytes, errno=0
+[2020-05-23 13:16:49 @23.0]     TRACE   swTimer_del_ex(:213): id=337, exec_msec=190769, round=335, exist=0
+[2020-05-23 13:16:49 @23.0]     TRACE   swConnection_peek(:246): peek -1/1 bytes, errno=11
+[2020-05-23 13:16:49 @23.0]     TRACE   swConnection_send(:218): send 46/46 bytes, errno=0
+[2020-05-23 13:16:49 @23.0]     TRACE   swConnection_peek(:246): peek -1/1 bytes, errno=11
+[2020-05-23 13:16:49 @23.0]     TRACE   swConnection_recv(:184): recv -1/8192 bytes, errno=11
+[2020-05-23 13:16:49 @23.0]     TRACE   swTimer_add(:183): id=338, exec_msec=190769, msec=60000, round=336, exist=1
+[2020-05-23 13:16:49 @23.0]     TRACE   swReactorEpoll_add(:140): add event[reactor_id=0, fd=5, events=512]
+[2020-05-23 13:16:49 @23.0]     TRACE   wait_event(:146): socket#5 blongs to cid#1 is waiting for READ event
+[2020-05-23 13:16:49 @23.0]     TRACE   on_yield(:214): php_coro_yield from cid=1 to cid=-1
+[2020-05-23 13:16:49 @23.0]     TRACE   swTimer_select(:234): timer msec=130769, round=336
+[2020-05-23 13:16:49 @26.0]     TRACE   on_resume(:228): php_coro_resume from cid=-1 to cid=1
+[2020-05-23 13:16:49 @26.0]     TRACE   swReactorEpoll_del(:155): remove event[reactor_id=0|fd=5]
+[2020-05-23 13:16:49 @26.0]     TRACE   wait_event(:187): socket#5 blongs to cid#1 trigger READ event
+[2020-05-23 13:16:49 @26.0]     TRACE   swConnection_recv(:184): recv 7/8192 bytes, errno=0
+[2020-05-23 13:16:49 @26.0]     TRACE   swTimer_del_ex(:213): id=348, exec_msec=190756, round=346, exist=0
+[2020-05-23 13:16:49 @26.0]     TRACE   swConnection_peek(:246): peek -1/1 bytes, errno=11
+[2020-05-23 13:16:49 @26.0]     TRACE   swConnection_send(:218): send 36/36 bytes, errno=0
+[2020-05-23 13:16:49 @26.0]     TRACE   swConnection_peek(:246): peek -1/1 bytes, errno=11
+[2020-05-23 13:16:49 @26.0]     TRACE   swConnection_recv(:184): recv -1/8192 bytes, errno=11
+[2020-05-23 13:16:49 @26.0]     TRACE   swTimer_add(:183): id=349, exec_msec=190756, msec=60000, round=347, exist=1
+[2020-05-23 13:16:49 @26.0]     TRACE   swReactorEpoll_add(:140): add event[reactor_id=0, fd=5, events=512]
+[2020-05-23 13:16:49 @26.0]     TRACE   wait_event(:146): socket#5 blongs to cid#1 is waiting for READ event
+[2020-05-23 13:16:49 @26.0]     TRACE   on_yield(:214): php_coro_yield from cid=1 to cid=-1
+[2020-05-23 13:16:49 @26.0]     TRACE   swTimer_select(:234): timer msec=130756, round=347
+[2020-05-23 13:16:49 @23.0]     TRACE   on_resume(:228): php_coro_resume from cid=-1 to cid=1
+[2020-05-23 13:16:49 @23.0]     TRACE   swReactorEpoll_del(:155): remove event[reactor_id=0|fd=5]
+[2020-05-23 13:16:49 @23.0]     TRACE   wait_event(:187): socket#5 blongs to cid#1 trigger READ event
+[2020-05-23 13:16:49 @23.0]     TRACE   swConnection_recv(:184): recv 5/8192 bytes, errno=0
+[2020-05-23 13:16:49 @23.0]     TRACE   swTimer_del_ex(:213): id=338, exec_msec=190769, round=336, exist=0
+[2020-05-23 13:16:49 @23.0]     TRACE   swTimer_add(:183): id=339, exec_msec=131269, msec=500, round=337, exist=1
+[2020-05-23 13:16:49 @23.0]     TRACE   on_yield(:214): php_coro_yield from cid=1 to cid=-1
+[2020-05-23 13:16:49 @23.0]     TRACE   swTimer_select(:234): timer msec=130770, round=337
+[2020-05-23 13:16:49 @26.0]     TRACE   on_resume(:228): php_coro_resume from cid=-1 to cid=1
+[2020-05-23 13:16:49 @26.0]     TRACE   swReactorEpoll_del(:155): remove event[reactor_id=0|fd=5]
+[2020-05-23 13:16:49 @26.0]     TRACE   wait_event(:187): socket#5 blongs to cid#1 trigger READ event
+[2020-05-23 13:16:49 @26.0]     TRACE   swConnection_recv(:184): recv 5/8192 bytes, errno=0
+[2020-05-23 13:16:49 @26.0]     TRACE   swTimer_del_ex(:213): id=349, exec_msec=190756, round=347, exist=0
+[2020-05-23 13:16:49 @26.0]     TRACE   swTimer_add(:183): id=350, exec_msec=131257, msec=500, round=348, exist=1
+[2020-05-23 13:16:49 @26.0]     TRACE   on_yield(:214): php_coro_yield from cid=1 to cid=-1
+[2020-05-23 13:16:49 @26.0]     TRACE   swTimer_select(:234): timer msec=130757, round=348
+[2020-05-23 13:16:49 #1.4]      TRACE   swTimer_select(:234): timer msec=131000, round=132
+[2020-05-23 13:16:49 #1.4]      TRACE   swTimer_select(:246): id=1, exec_msec=131000, round=0, exist=0
+[2020-05-23 13:16:49 @28.0]     TRACE   swTimer_select(:234): timer msec=131000, round=262
+[2020-05-23 13:16:49 @28.0]     TRACE   swTimer_select(:246): id=1, exec_msec=131000, round=0, exist=0
+[2020-05-23 13:16:49 @28.0]     TRACE   Context(:40): alloc stack: size=2097152, ptr=0x5644c70122e0
+[2020-05-23 13:16:49 @28.0]     TRACE   create_func(:352): Create coro id: 262, origin cid: -1, coro total count: 1, heap size: 3553568
+[2020-05-23 13:16:49 @28.0]     TRACE   on_close(:260): coro close cid=262 and resume to -1, 0 remained. usage size: 3545376. malloc size: 4194304
+[2020-05-23 13:16:49 @28.0]     TRACE   close(:87): coroutine#262 stack memory use less than 65536 bytes
+[2020-05-23 13:16:49 @28.0]     TRACE   ~Context(:71): free stack: ptr=0x5644c70122e0
+[2020-05-23 13:16:49 @21.0]     TRACE   swTimer_select(:234): timer msec=132220, round=134
+[2020-05-23 13:16:49 @21.0]     TRACE   swTimer_select(:246): id=267, exec_msec=132219, round=133, exist=1
+[2020-05-23 13:16:49 @21.0]     TRACE   on_resume(:228): php_coro_resume from cid=-1 to cid=2
+[2020-05-23 13:16:49 @21.0]     TRACE   swTimer_add(:183): id=269, exec_msec=133220, msec=1000, round=134, exist=3
+[2020-05-23 13:16:49 @21.0]     TRACE   on_yield(:214): php_coro_yield from cid=2 to cid=-1
+[2020-05-23 13:16:49 @21.0]     TRACE   swTimer_select(:246): id=268, exec_msec=132220, round=133, exist=1
+[2020-05-23 13:16:49 @21.0]     TRACE   on_resume(:228): php_coro_resume from cid=-1 to cid=1
+[2020-05-23 13:16:49 @21.0]     TRACE   swTimer_add(:183): id=270, exec_msec=133221, msec=1000, round=134, exist=3
+[2020-05-23 13:16:49 @21.0]     TRACE   on_yield(:214): php_coro_yield from cid=1 to cid=-1
+[2020-05-23 13:16:49 @22.0]     TRACE   swTimer_select(:234): timer msec=132283, round=491
+[2020-05-23 13:16:49 @22.0]     TRACE   swTimer_select(:246): id=483, exec_msec=132282, round=490, exist=0
+[2020-05-23 13:16:49 @22.0]     TRACE   on_resume(:228): php_coro_resume from cid=-1 to cid=1
+[2020-05-23 13:16:49 @22.0]     TRACE   swConnection_peek(:246): peek -1/1 bytes, errno=11
+[2020-05-23 13:16:49 @22.0]     TRACE   swConnection_send(:218): send 14/14 bytes, errno=0
+[2020-05-23 13:16:49 @22.0]     TRACE   swConnection_peek(:246): peek -1/1 bytes, errno=11
+[2020-05-23 13:16:49 @22.0]     TRACE   swConnection_recv(:184): recv 7/8192 bytes, errno=0
+[2020-05-23 13:16:49 @22.0]     TRACE   swConnection_peek(:246): peek -1/1 bytes, errno=11
+[2020-05-23 13:16:49 @22.0]     TRACE   swConnection_send(:218): send 46/46 bytes, errno=0
+[2020-05-23 13:16:49 @22.0]     TRACE   swConnection_peek(:246): peek -1/1 bytes, errno=11
+[2020-05-23 13:16:49 @22.0]     TRACE   swConnection_recv(:184): recv 5/8192 bytes, errno=0
+[2020-05-23 13:16:49 @22.0]     TRACE   swTimer_add(:183): id=484, exec_msec=132783, msec=500, round=491, exist=2
+[2020-05-23 13:16:49 @22.0]     TRACE   on_yield(:214): php_coro_yield from cid=1 to cid=-1
+[2020-05-23 13:16:50 @22.0]     TRACE   swTimer_select(:234): timer msec=131224, round=133
+[2020-05-23 13:16:50 @22.0]     TRACE   swTimer_select(:246): id=264, exec_msec=131222, round=132, exist=1
+[2020-05-23 13:16:50 @22.0]     TRACE   on_resume(:228): php_coro_resume from cid=-1 to cid=2
+[2020-05-23 13:16:50 @22.0]     TRACE   swTimer_add(:183): id=265, exec_msec=132224, msec=1000, round=133, exist=3
+[2020-05-23 13:16:50 @22.0]     TRACE   on_yield(:214): php_coro_yield from cid=2 to cid=-1
+[2020-05-23 13:16:50 @22.0]     TRACE   swTimer_select(:246): id=263, exec_msec=131222, round=132, exist=1
+[2020-05-23 13:16:50 @22.0]     TRACE   on_resume(:228): php_coro_resume from cid=-1 to cid=1
+[2020-05-23 13:16:50 @22.0]     TRACE   swTimer_add(:183): id=266, exec_msec=132224, msec=1000, round=133, exist=3
+[2020-05-23 13:16:50 @22.0]     TRACE   on_yield(:214): php_coro_yield from cid=1 to cid=-1
+[2020-05-23 13:16:50 @27.0]     TRACE   swTimer_select(:234): timer msec=131222, round=195
+[2020-05-23 13:16:50 @27.0]     TRACE   swTimer_select(:246): id=366, exec_msec=131221, round=194, exist=2
+[2020-05-23 13:16:50 @27.0]     TRACE   on_resume(:228): php_coro_resume from cid=-1 to cid=1
+[2020-05-23 13:16:50 @27.0]     TRACE   swConnection_peek(:246): peek -1/1 bytes, errno=11
+[2020-05-23 13:16:50 @27.0]     TRACE   swConnection_send(:218): send 14/14 bytes, errno=0
+[2020-05-23 13:16:50 @27.0]     TRACE   swConnection_peek(:246): peek -1/1 bytes, errno=11
+[2020-05-23 13:16:50 @27.0]     TRACE   swConnection_recv(:184): recv 7/8192 bytes, errno=0
+[2020-05-23 13:16:50 @27.0]     TRACE   swConnection_peek(:246): peek -1/1 bytes, errno=11
+[2020-05-23 13:16:50 @27.0]     TRACE   swConnection_send(:218): send 54/54 bytes, errno=0
+[2020-05-23 13:16:50 @27.0]     TRACE   swConnection_peek(:246): peek -1/1 bytes, errno=11
+[2020-05-23 13:16:50 @27.0]     TRACE   swConnection_recv(:184): recv 5/8192 bytes, errno=0
+[2020-05-23 13:16:50 @27.0]     TRACE   swTimer_add(:183): id=367, exec_msec=132222, msec=1000, round=195, exist=4
+[2020-05-23 13:16:50 @27.0]     TRACE   on_yield(:214): php_coro_yield from cid=1 to cid=-1
+[2020-05-23 13:16:50 @27.0]     TRACE   swTimer_select(:246): id=365, exec_msec=131221, round=194, exist=2
+[2020-05-23 13:16:50 @27.0]     TRACE   on_resume(:228): php_coro_resume from cid=-1 to cid=2
+[2020-05-23 13:16:50 @27.0]     TRACE   swConnection_peek(:246): peek -1/1 bytes, errno=11
+[2020-05-23 13:16:50 @27.0]     TRACE   swConnection_send(:218): send 14/14 bytes, errno=0
+[2020-05-23 13:16:50 @27.0]     TRACE   swConnection_peek(:246): peek -1/1 bytes, errno=11
+[2020-05-23 13:16:50 @27.0]     TRACE   swConnection_recv(:184): recv 7/8192 bytes, errno=0
+[2020-05-23 13:16:50 @27.0]     TRACE   swConnection_peek(:246): peek -1/1 bytes, errno=11
+[2020-05-23 13:16:50 @27.0]     TRACE   swConnection_send(:218): send 43/43 bytes, errno=0
+[2020-05-23 13:16:50 @27.0]     TRACE   swConnection_peek(:246): peek -1/1 bytes, errno=11
+[2020-05-23 13:16:50 @27.0]     TRACE   swConnection_recv(:184): recv 5/8192 bytes, errno=0
+[2020-05-23 13:16:50 @27.0]     TRACE   swTimer_add(:183): id=368, exec_msec=132223, msec=1000, round=195, exist=4
+[2020-05-23 13:16:50 @27.0]     TRACE   on_yield(:214): php_coro_yield from cid=2 to cid=-1
+[2020-05-23 13:16:50 @23.0]     TRACE   swTimer_select(:234): timer msec=131269, round=338
+[2020-05-23 13:16:50 @23.0]     TRACE   swTimer_select(:246): id=339, exec_msec=131269, round=337, exist=0
+[2020-05-23 13:16:50 @23.0]     TRACE   on_resume(:228): php_coro_resume from cid=-1 to cid=1
+[2020-05-23 13:16:50 @23.0]     TRACE   swConnection_peek(:246): peek -1/1 bytes, errno=11
+[2020-05-23 13:16:50 @23.0]     TRACE   swConnection_send(:218): send 14/14 bytes, errno=0
+[2020-05-23 13:16:50 @23.0]     TRACE   swConnection_peek(:246): peek -1/1 bytes, errno=11
+[2020-05-23 13:16:50 @23.0]     TRACE   swConnection_recv(:184): recv -1/8192 bytes, errno=11
+[2020-05-23 13:16:50 @23.0]     TRACE   swTimer_add(:183): id=340, exec_msec=191269, msec=60000, round=338, exist=2
+[2020-05-23 13:16:50 @23.0]     TRACE   swReactorEpoll_add(:140): add event[reactor_id=0, fd=5, events=512]
+[2020-05-23 13:16:50 @23.0]     TRACE   wait_event(:146): socket#5 blongs to cid#1 is waiting for READ event
+[2020-05-23 13:16:50 @23.0]     TRACE   on_yield(:214): php_coro_yield from cid=1 to cid=-1
+[2020-05-23 13:16:50 @23.0]     TRACE   on_resume(:228): php_coro_resume from cid=-1 to cid=1
+[2020-05-23 13:16:50 @23.0]     TRACE   swReactorEpoll_del(:155): remove event[reactor_id=0|fd=5]
+[2020-05-23 13:16:50 @23.0]     TRACE   wait_event(:187): socket#5 blongs to cid#1 trigger READ event
+[2020-05-23 13:16:50 @23.0]     TRACE   swConnection_recv(:184): recv 7/8192 bytes, errno=0
+[2020-05-23 13:16:50 @23.0]     TRACE   swTimer_del_ex(:213): id=340, exec_msec=191269, round=338, exist=0
+[2020-05-23 13:16:50 @23.0]     TRACE   swConnection_peek(:246): peek -1/1 bytes, errno=11
+[2020-05-23 13:16:50 @23.0]     TRACE   swConnection_send(:218): send 46/46 bytes, errno=0
+[2020-05-23 13:16:50 @23.0]     TRACE   swConnection_peek(:246): peek -1/1 bytes, errno=11
+[2020-05-23 13:16:50 @23.0]     TRACE   swConnection_recv(:184): recv -1/8192 bytes, errno=11
+[2020-05-23 13:16:50 @23.0]     TRACE   swTimer_add(:183): id=341, exec_msec=191269, msec=60000, round=339, exist=1
+[2020-05-23 13:16:50 @23.0]     TRACE   swReactorEpoll_add(:140): add event[reactor_id=0, fd=5, events=512]
+[2020-05-23 13:16:50 @23.0]     TRACE   wait_event(:146): socket#5 blongs to cid#1 is waiting for READ event
+[2020-05-23 13:16:50 @23.0]     TRACE   on_yield(:214): php_coro_yield from cid=1 to cid=-1
+[2020-05-23 13:16:50 @23.0]     TRACE   swTimer_select(:234): timer msec=131269, round=339
+[2020-05-23 13:16:50 @23.0]     TRACE   on_resume(:228): php_coro_resume from cid=-1 to cid=1
+[2020-05-23 13:16:50 @23.0]     TRACE   swReactorEpoll_del(:155): remove event[reactor_id=0|fd=5]
+[2020-05-23 13:16:50 @23.0]     TRACE   wait_event(:187): socket#5 blongs to cid#1 trigger READ event
+[2020-05-23 13:16:50 @23.0]     TRACE   swConnection_recv(:184): recv 5/8192 bytes, errno=0
+[2020-05-23 13:16:50 @23.0]     TRACE   swTimer_del_ex(:213): id=341, exec_msec=191269, round=339, exist=0
+[2020-05-23 13:16:50 @23.0]     TRACE   swTimer_add(:183): id=342, exec_msec=131770, msec=500, round=340, exist=1
+[2020-05-23 13:16:50 @23.0]     TRACE   on_yield(:214): php_coro_yield from cid=1 to cid=-1
+[2020-05-23 13:16:50 @23.0]     TRACE   swTimer_select(:234): timer msec=131270, round=340
+[2020-05-23 13:16:50 @26.0]     TRACE   swTimer_select(:234): timer msec=131257, round=349
+[2020-05-23 13:16:50 @26.0]     TRACE   swTimer_select(:246): id=350, exec_msec=131257, round=348, exist=0
+[2020-05-23 13:16:50 @26.0]     TRACE   on_resume(:228): php_coro_resume from cid=-1 to cid=1
+[2020-05-23 13:16:50 @26.0]     TRACE   swConnection_peek(:246): peek -1/1 bytes, errno=11
+[2020-05-23 13:16:50 @26.0]     TRACE   swConnection_send(:218): send 14/14 bytes, errno=0
+[2020-05-23 13:16:50 @26.0]     TRACE   swConnection_peek(:246): peek -1/1 bytes, errno=11
+[2020-05-23 13:16:50 @26.0]     TRACE   swConnection_recv(:184): recv -1/8192 bytes, errno=11
+[2020-05-23 13:16:50 @26.0]     TRACE   swTimer_add(:183): id=351, exec_msec=191257, msec=60000, round=349, exist=2
+[2020-05-23 13:16:50 @26.0]     TRACE   swReactorEpoll_add(:140): add event[reactor_id=0, fd=5, events=512]
+[2020-05-23 13:16:50 @26.0]     TRACE   wait_event(:146): socket#5 blongs to cid#1 is waiting for READ event
+[2020-05-23 13:16:50 @26.0]     TRACE   on_yield(:214): php_coro_yield from cid=1 to cid=-1
+[2020-05-23 13:16:50 @26.0]     TRACE   on_resume(:228): php_coro_resume from cid=-1 to cid=1
+[2020-05-23 13:16:50 @26.0]     TRACE   swReactorEpoll_del(:155): remove event[reactor_id=0|fd=5]
+[2020-05-23 13:16:50 @26.0]     TRACE   wait_event(:187): socket#5 blongs to cid#1 trigger READ event
+[2020-05-23 13:16:50 @26.0]     TRACE   swConnection_recv(:184): recv 7/8192 bytes, errno=0
+[2020-05-23 13:16:50 @26.0]     TRACE   swTimer_del_ex(:213): id=351, exec_msec=191257, round=349, exist=0
+[2020-05-23 13:16:50 @26.0]     TRACE   swConnection_peek(:246): peek -1/1 bytes, errno=11
+[2020-05-23 13:16:50 @26.0]     TRACE   swConnection_send(:218): send 36/36 bytes, errno=0
+[2020-05-23 13:16:50 @26.0]     TRACE   swConnection_peek(:246): peek -1/1 bytes, errno=11
+[2020-05-23 13:16:50 @26.0]     TRACE   swConnection_recv(:184): recv -1/8192 bytes, errno=11
+[2020-05-23 13:16:50 @26.0]     TRACE   swTimer_add(:183): id=352, exec_msec=191257, msec=60000, round=350, exist=1
+[2020-05-23 13:16:50 @26.0]     TRACE   swReactorEpoll_add(:140): add event[reactor_id=0, fd=5, events=512]
+[2020-05-23 13:16:50 @26.0]     TRACE   wait_event(:146): socket#5 blongs to cid#1 is waiting for READ event
+[2020-05-23 13:16:50 @26.0]     TRACE   on_yield(:214): php_coro_yield from cid=1 to cid=-1
+[2020-05-23 13:16:50 @26.0]     TRACE   swTimer_select(:234): timer msec=131257, round=350
+[2020-05-23 13:16:50 @26.0]     TRACE   on_resume(:228): php_coro_resume from cid=-1 to cid=1
+[2020-05-23 13:16:50 @26.0]     TRACE   swReactorEpoll_del(:155): remove event[reactor_id=0|fd=5]
+[2020-05-23 13:16:50 @26.0]     TRACE   wait_event(:187): socket#5 blongs to cid#1 trigger READ event
+[2020-05-23 13:16:50 @26.0]     TRACE   swConnection_recv(:184): recv 5/8192 bytes, errno=0
+[2020-05-23 13:16:50 @26.0]     TRACE   swTimer_del_ex(:213): id=352, exec_msec=191257, round=350, exist=0
+[2020-05-23 13:16:50 @26.0]     TRACE   swTimer_add(:183): id=353, exec_msec=131758, msec=500, round=351, exist=1
+[2020-05-23 13:16:50 @26.0]     TRACE   on_yield(:214): php_coro_yield from cid=1 to cid=-1
+[2020-05-23 13:16:50 @26.0]     TRACE   swTimer_select(:234): timer msec=131258, round=351
+[2020-05-23 13:16:50 @28.0]     TRACE   swTimer_select(:234): timer msec=131501, round=263
+[2020-05-23 13:16:50 @28.0]     TRACE   swTimer_select(:246): id=1, exec_msec=131500, round=0, exist=0
+[2020-05-23 13:16:50 @28.0]     TRACE   Context(:40): alloc stack: size=2097152, ptr=0x5644c70122e0
+[2020-05-23 13:16:50 @28.0]     TRACE   create_func(:352): Create coro id: 263, origin cid: -1, coro total count: 1, heap size: 3553568
+[2020-05-23 13:16:50 @28.0]     TRACE   on_close(:260): coro close cid=263 and resume to -1, 0 remained. usage size: 3545376. malloc size: 4194304
+[2020-05-23 13:16:50 @28.0]     TRACE   close(:87): coroutine#263 stack memory use less than 65536 bytes
+[2020-05-23 13:16:50 @28.0]     TRACE   ~Context(:71): free stack: ptr=0x5644c70122e0
+[2020-05-23 13:16:50 @22.0]     TRACE   swTimer_select(:234): timer msec=132783, round=492
+[2020-05-23 13:16:50 @22.0]     TRACE   swTimer_select(:246): id=484, exec_msec=132783, round=491, exist=0
+[2020-05-23 13:16:50 @22.0]     TRACE   on_resume(:228): php_coro_resume from cid=-1 to cid=1
+[2020-05-23 13:16:50 @22.0]     TRACE   swConnection_peek(:246): peek -1/1 bytes, errno=11
+[2020-05-23 13:16:50 @22.0]     TRACE   swConnection_send(:218): send 14/14 bytes, errno=0
+[2020-05-23 13:16:50 @22.0]     TRACE   swConnection_peek(:246): peek -1/1 bytes, errno=11
+[2020-05-23 13:16:50 @22.0]     TRACE   swConnection_recv(:184): recv 7/8192 bytes, errno=0
+[2020-05-23 13:16:50 @22.0]     TRACE   swConnection_peek(:246): peek -1/1 bytes, errno=11
+[2020-05-23 13:16:50 @22.0]     TRACE   swConnection_send(:218): send 46/46 bytes, errno=0
+[2020-05-23 13:16:50 @22.0]     TRACE   swConnection_peek(:246): peek -1/1 bytes, errno=11
+[2020-05-23 13:16:50 @22.0]     TRACE   swConnection_recv(:184): recv 5/8192 bytes, errno=0
+[2020-05-23 13:16:50 @22.0]     TRACE   swTimer_add(:183): id=485, exec_msec=133284, msec=500, round=492, exist=2
+[2020-05-23 13:16:50 @22.0]     TRACE   on_yield(:214): php_coro_yield from cid=1 to cid=-1
+[2020-05-23 13:16:50 #1.4]      TRACE   swTimer_select(:234): timer msec=133001, round=134
+[2020-05-23 13:16:50 #1.4]      TRACE   swTimer_select(:246): id=1, exec_msec=133000, round=0, exist=0
+[2020-05-23 13:16:50 @23.0]     TRACE   swTimer_select(:234): timer msec=131770, round=341
+[2020-05-23 13:16:50 @23.0]     TRACE   swTimer_select(:246): id=342, exec_msec=131770, round=340, exist=0
+[2020-05-23 13:16:50 @23.0]     TRACE   on_resume(:228): php_coro_resume from cid=-1 to cid=1
+[2020-05-23 13:16:50 @23.0]     TRACE   swConnection_peek(:246): peek -1/1 bytes, errno=11
+[2020-05-23 13:16:50 @23.0]     TRACE   swConnection_send(:218): send 14/14 bytes, errno=0
+[2020-05-23 13:16:50 @23.0]     TRACE   swConnection_peek(:246): peek -1/1 bytes, errno=11
+[2020-05-23 13:16:50 @23.0]     TRACE   swConnection_recv(:184): recv -1/8192 bytes, errno=11
+[2020-05-23 13:16:50 @23.0]     TRACE   swTimer_add(:183): id=343, exec_msec=191770, msec=60000, round=341, exist=2
+[2020-05-23 13:16:50 @23.0]     TRACE   swReactorEpoll_add(:140): add event[reactor_id=0, fd=5, events=512]
+[2020-05-23 13:16:50 @23.0]     TRACE   wait_event(:146): socket#5 blongs to cid#1 is waiting for READ event
+[2020-05-23 13:16:50 @23.0]     TRACE   on_yield(:214): php_coro_yield from cid=1 to cid=-1
+[2020-05-23 13:16:50 @23.0]     TRACE   on_resume(:228): php_coro_resume from cid=-1 to cid=1
+[2020-05-23 13:16:50 @23.0]     TRACE   swReactorEpoll_del(:155): remove event[reactor_id=0|fd=5]
+[2020-05-23 13:16:50 @23.0]     TRACE   wait_event(:187): socket#5 blongs to cid#1 trigger READ event
+[2020-05-23 13:16:50 @23.0]     TRACE   swConnection_recv(:184): recv 7/8192 bytes, errno=0
+[2020-05-23 13:16:50 @23.0]     TRACE   swTimer_del_ex(:213): id=343, exec_msec=191770, round=341, exist=0
+[2020-05-23 13:16:50 @23.0]     TRACE   swConnection_peek(:246): peek -1/1 bytes, errno=11
+[2020-05-23 13:16:50 @23.0]     TRACE   swConnection_send(:218): send 46/46 bytes, errno=0
+[2020-05-23 13:16:50 @23.0]     TRACE   swConnection_peek(:246): peek -1/1 bytes, errno=11
+[2020-05-23 13:16:50 @23.0]     TRACE   swConnection_recv(:184): recv -1/8192 bytes, errno=11
+[2020-05-23 13:16:50 @23.0]     TRACE   swTimer_add(:183): id=344, exec_msec=191770, msec=60000, round=342, exist=1
+[2020-05-23 13:16:50 @23.0]     TRACE   swReactorEpoll_add(:140): add event[reactor_id=0, fd=5, events=512]
+[2020-05-23 13:16:50 @23.0]     TRACE   wait_event(:146): socket#5 blongs to cid#1 is waiting for READ event
+[2020-05-23 13:16:50 @23.0]     TRACE   on_yield(:214): php_coro_yield from cid=1 to cid=-1
+[2020-05-23 13:16:50 @23.0]     TRACE   swTimer_select(:234): timer msec=131770, round=342
+[2020-05-23 13:16:50 @23.0]     TRACE   on_resume(:228): php_coro_resume from cid=-1 to cid=1
+[2020-05-23 13:16:50 @23.0]     TRACE   swReactorEpoll_del(:155): remove event[reactor_id=0|fd=5]
+[2020-05-23 13:16:50 @23.0]     TRACE   wait_event(:187): socket#5 blongs to cid#1 trigger READ event
+[2020-05-23 13:16:50 @23.0]     TRACE   swConnection_recv(:184): recv 5/8192 bytes, errno=0
+[2020-05-23 13:16:50 @23.0]     TRACE   swTimer_del_ex(:213): id=344, exec_msec=191770, round=342, exist=0
+[2020-05-23 13:16:50 @23.0]     TRACE   swTimer_add(:183): id=345, exec_msec=132271, msec=500, round=343, exist=1
+[2020-05-23 13:16:50 @23.0]     TRACE   on_yield(:214): php_coro_yield from cid=1 to cid=-1
+[2020-05-23 13:16:50 @23.0]     TRACE   swTimer_select(:234): timer msec=131771, round=343
+[2020-05-23 13:16:50 @26.0]     TRACE   swTimer_select(:234): timer msec=131758, round=352
+[2020-05-23 13:16:50 @26.0]     TRACE   swTimer_select(:246): id=353, exec_msec=131758, round=351, exist=0
+[2020-05-23 13:16:50 @26.0]     TRACE   on_resume(:228): php_coro_resume from cid=-1 to cid=1
+[2020-05-23 13:16:50 @26.0]     TRACE   swConnection_peek(:246): peek -1/1 bytes, errno=11
+[2020-05-23 13:16:50 @26.0]     TRACE   swConnection_send(:218): send 14/14 bytes, errno=0
+[2020-05-23 13:16:50 @26.0]     TRACE   swConnection_peek(:246): peek -1/1 bytes, errno=11
+[2020-05-23 13:16:50 @26.0]     TRACE   swConnection_recv(:184): recv -1/8192 bytes, errno=11
+[2020-05-23 13:16:50 @26.0]     TRACE   swTimer_add(:183): id=354, exec_msec=191758, msec=60000, round=352, exist=2
+[2020-05-23 13:16:50 @26.0]     TRACE   swReactorEpoll_add(:140): add event[reactor_id=0, fd=5, events=512]
+[2020-05-23 13:16:50 @26.0]     TRACE   wait_event(:146): socket#5 blongs to cid#1 is waiting for READ event
+[2020-05-23 13:16:50 @26.0]     TRACE   on_yield(:214): php_coro_yield from cid=1 to cid=-1
+[2020-05-23 13:16:50 @26.0]     TRACE   on_resume(:228): php_coro_resume from cid=-1 to cid=1
+[2020-05-23 13:16:50 @26.0]     TRACE   swReactorEpoll_del(:155): remove event[reactor_id=0|fd=5]
+[2020-05-23 13:16:50 @26.0]     TRACE   wait_event(:187): socket#5 blongs to cid#1 trigger READ event
+[2020-05-23 13:16:50 @26.0]     TRACE   swConnection_recv(:184): recv 7/8192 bytes, errno=0
+[2020-05-23 13:16:50 @26.0]     TRACE   swTimer_del_ex(:213): id=354, exec_msec=191758, round=352, exist=0
+[2020-05-23 13:16:50 @26.0]     TRACE   swConnection_peek(:246): peek -1/1 bytes, errno=11
+[2020-05-23 13:16:50 @26.0]     TRACE   swConnection_send(:218): send 36/36 bytes, errno=0
+[2020-05-23 13:16:50 @26.0]     TRACE   swConnection_peek(:246): peek -1/1 bytes, errno=11
+[2020-05-23 13:16:50 @26.0]     TRACE   swConnection_recv(:184): recv -1/8192 bytes, errno=11
+[2020-05-23 13:16:50 @26.0]     TRACE   swTimer_add(:183): id=355, exec_msec=191758, msec=60000, round=353, exist=1
+[2020-05-23 13:16:50 @26.0]     TRACE   swReactorEpoll_add(:140): add event[reactor_id=0, fd=5, events=512]
+[2020-05-23 13:16:50 @26.0]     TRACE   wait_event(:146): socket#5 blongs to cid#1 is waiting for READ event
+[2020-05-23 13:16:50 @26.0]     TRACE   on_yield(:214): php_coro_yield from cid=1 to cid=-1
+[2020-05-23 13:16:50 @26.0]     TRACE   swTimer_select(:234): timer msec=131758, round=353
+[2020-05-23 13:16:50 @26.0]     TRACE   on_resume(:228): php_coro_resume from cid=-1 to cid=1
+[2020-05-23 13:16:50 @26.0]     TRACE   swReactorEpoll_del(:155): remove event[reactor_id=0|fd=5]
+[2020-05-23 13:16:50 @26.0]     TRACE   wait_event(:187): socket#5 blongs to cid#1 trigger READ event
+[2020-05-23 13:16:50 @26.0]     TRACE   swConnection_recv(:184): recv 5/8192 bytes, errno=0
+[2020-05-23 13:16:50 @26.0]     TRACE   swTimer_del_ex(:213): id=355, exec_msec=191758, round=353, exist=0
+[2020-05-23 13:16:50 @26.0]     TRACE   swTimer_add(:183): id=356, exec_msec=132259, msec=500, round=354, exist=1
+[2020-05-23 13:16:50 @26.0]     TRACE   on_yield(:214): php_coro_yield from cid=1 to cid=-1
+[2020-05-23 13:16:50 @26.0]     TRACE   swTimer_select(:234): timer msec=131759, round=354
+[2020-05-23 13:16:50 #1.4]      TRACE   swTimer_select(:234): timer msec=132001, round=133
+[2020-05-23 13:16:50 #1.4]      TRACE   swTimer_select(:246): id=1, exec_msec=132000, round=0, exist=0
+[2020-05-23 13:16:50 @28.0]     TRACE   swTimer_select(:234): timer msec=132001, round=264
+[2020-05-23 13:16:50 @28.0]     TRACE   swTimer_select(:246): id=1, exec_msec=132000, round=0, exist=0
+[2020-05-23 13:16:50 @28.0]     TRACE   Context(:40): alloc stack: size=2097152, ptr=0x5644c70122e0
+[2020-05-23 13:16:50 @28.0]     TRACE   create_func(:352): Create coro id: 264, origin cid: -1, coro total count: 1, heap size: 3553568
+[2020-05-23 13:16:50 @28.0]     TRACE   on_close(:260): coro close cid=264 and resume to -1, 0 remained. usage size: 3545376. malloc size: 4194304
+[2020-05-23 13:16:50 @28.0]     TRACE   close(:87): coroutine#264 stack memory use less than 65536 bytes
+[2020-05-23 13:16:50 @28.0]     TRACE   ~Context(:71): free stack: ptr=0x5644c70122e0
+[2020-05-23 13:16:50 @21.0]     TRACE   swTimer_select(:234): timer msec=133222, round=135
+[2020-05-23 13:16:50 @21.0]     TRACE   swTimer_select(:246): id=269, exec_msec=133220, round=134, exist=1
+[2020-05-23 13:16:50 @21.0]     TRACE   on_resume(:228): php_coro_resume from cid=-1 to cid=2
+[2020-05-23 13:16:50 @21.0]     TRACE   swTimer_add(:183): id=271, exec_msec=134222, msec=1000, round=135, exist=3
+[2020-05-23 13:16:50 @21.0]     TRACE   on_yield(:214): php_coro_yield from cid=2 to cid=-1
+[2020-05-23 13:16:50 @21.0]     TRACE   swTimer_select(:246): id=270, exec_msec=133221, round=134, exist=1
+[2020-05-23 13:16:50 @21.0]     TRACE   on_resume(:228): php_coro_resume from cid=-1 to cid=1
+[2020-05-23 13:16:50 @21.0]     TRACE   swTimer_add(:183): id=272, exec_msec=134222, msec=1000, round=135, exist=3
+[2020-05-23 13:16:50 @21.0]     TRACE   on_yield(:214): php_coro_yield from cid=1 to cid=-1
+[2020-05-23 13:16:50 @22.0]     TRACE   swTimer_select(:234): timer msec=133285, round=493
+[2020-05-23 13:16:50 @22.0]     TRACE   swTimer_select(:246): id=485, exec_msec=133284, round=492, exist=0
+[2020-05-23 13:16:50 @22.0]     TRACE   on_resume(:228): php_coro_resume from cid=-1 to cid=1
+[2020-05-23 13:16:50 @22.0]     TRACE   swConnection_peek(:246): peek -1/1 bytes, errno=11
+[2020-05-23 13:16:50 @22.0]     TRACE   swConnection_send(:218): send 14/14 bytes, errno=0
+[2020-05-23 13:16:50 @22.0]     TRACE   swConnection_peek(:246): peek -1/1 bytes, errno=11
+[2020-05-23 13:16:50 @22.0]     TRACE   swConnection_recv(:184): recv 7/8192 bytes, errno=0
+[2020-05-23 13:16:50 @22.0]     TRACE   swConnection_peek(:246): peek -1/1 bytes, errno=11
+[2020-05-23 13:16:50 @22.0]     TRACE   swConnection_send(:218): send 46/46 bytes, errno=0
+[2020-05-23 13:16:50 @22.0]     TRACE   swConnection_peek(:246): peek -1/1 bytes, errno=11
+[2020-05-23 13:16:50 @22.0]     TRACE   swConnection_recv(:184): recv 5/8192 bytes, errno=0
+[2020-05-23 13:16:50 @22.0]     TRACE   swTimer_add(:183): id=486, exec_msec=133786, msec=500, round=493, exist=2
+[2020-05-23 13:16:50 @22.0]     TRACE   on_yield(:214): php_coro_yield from cid=1 to cid=-1
+[2020-05-23 13:16:51 @22.0]     TRACE   swTimer_select(:234): timer msec=132225, round=134
+[2020-05-23 13:16:51 @22.0]     TRACE   swTimer_select(:246): id=266, exec_msec=132224, round=133, exist=1
+[2020-05-23 13:16:51 @22.0]     TRACE   on_resume(:228): php_coro_resume from cid=-1 to cid=1
+[2020-05-23 13:16:51 @22.0]     TRACE   swTimer_add(:183): id=267, exec_msec=133226, msec=1000, round=134, exist=3
+[2020-05-23 13:16:51 @22.0]     TRACE   on_yield(:214): php_coro_yield from cid=1 to cid=-1
+[2020-05-23 13:16:51 @22.0]     TRACE   swTimer_select(:246): id=265, exec_msec=132224, round=133, exist=1
+[2020-05-23 13:16:51 @22.0]     TRACE   on_resume(:228): php_coro_resume from cid=-1 to cid=2
+[2020-05-23 13:16:51 @22.0]     TRACE   swTimer_add(:183): id=268, exec_msec=133226, msec=1000, round=134, exist=3
+[2020-05-23 13:16:51 @22.0]     TRACE   on_yield(:214): php_coro_yield from cid=2 to cid=-1
+[2020-05-23 13:16:51 @27.0]     TRACE   swTimer_select(:234): timer msec=132223, round=196
+[2020-05-23 13:16:51 @27.0]     TRACE   swTimer_select(:246): id=367, exec_msec=132222, round=195, exist=2
+[2020-05-23 13:16:51 @27.0]     TRACE   on_resume(:228): php_coro_resume from cid=-1 to cid=1
+[2020-05-23 13:16:51 @27.0]     TRACE   swConnection_peek(:246): peek -1/1 bytes, errno=11
+[2020-05-23 13:16:51 @27.0]     TRACE   swConnection_send(:218): send 14/14 bytes, errno=0
+[2020-05-23 13:16:51 @27.0]     TRACE   swConnection_peek(:246): peek -1/1 bytes, errno=11
+[2020-05-23 13:16:51 @27.0]     TRACE   swConnection_recv(:184): recv 7/8192 bytes, errno=0
+[2020-05-23 13:16:51 @27.0]     TRACE   swConnection_peek(:246): peek -1/1 bytes, errno=11
+[2020-05-23 13:16:51 @27.0]     TRACE   swConnection_send(:218): send 54/54 bytes, errno=0
+[2020-05-23 13:16:51 @27.0]     TRACE   swConnection_peek(:246): peek -1/1 bytes, errno=11
+[2020-05-23 13:16:51 @27.0]     TRACE   swConnection_recv(:184): recv 5/8192 bytes, errno=0
+[2020-05-23 13:16:51 @27.0]     TRACE   swTimer_add(:183): id=369, exec_msec=133224, msec=1000, round=196, exist=4
+[2020-05-23 13:16:51 @27.0]     TRACE   on_yield(:214): php_coro_yield from cid=1 to cid=-1
+[2020-05-23 13:16:51 @27.0]     TRACE   swTimer_select(:246): id=368, exec_msec=132223, round=195, exist=2
+[2020-05-23 13:16:51 @27.0]     TRACE   on_resume(:228): php_coro_resume from cid=-1 to cid=2
+[2020-05-23 13:16:51 @27.0]     TRACE   swConnection_peek(:246): peek -1/1 bytes, errno=11
+[2020-05-23 13:16:51 @27.0]     TRACE   swConnection_send(:218): send 14/14 bytes, errno=0
+[2020-05-23 13:16:51 @27.0]     TRACE   swConnection_peek(:246): peek -1/1 bytes, errno=11
+[2020-05-23 13:16:51 @27.0]     TRACE   swConnection_recv(:184): recv 7/8192 bytes, errno=0
+[2020-05-23 13:16:51 @27.0]     TRACE   swConnection_peek(:246): peek -1/1 bytes, errno=11
+[2020-05-23 13:16:51 @27.0]     TRACE   swConnection_send(:218): send 43/43 bytes, errno=0
+[2020-05-23 13:16:51 @27.0]     TRACE   swConnection_peek(:246): peek -1/1 bytes, errno=11
+[2020-05-23 13:16:51 @27.0]     TRACE   swConnection_recv(:184): recv 5/8192 bytes, errno=0
+[2020-05-23 13:16:51 @27.0]     TRACE   swTimer_add(:183): id=370, exec_msec=133224, msec=1000, round=196, exist=4
+[2020-05-23 13:16:51 @27.0]     TRACE   on_yield(:214): php_coro_yield from cid=2 to cid=-1
+[2020-05-23 13:16:51 @23.0]     TRACE   swTimer_select(:234): timer msec=132271, round=344
+[2020-05-23 13:16:51 @23.0]     TRACE   swTimer_select(:246): id=345, exec_msec=132271, round=343, exist=0
+[2020-05-23 13:16:51 @23.0]     TRACE   on_resume(:228): php_coro_resume from cid=-1 to cid=1
+[2020-05-23 13:16:51 @23.0]     TRACE   swConnection_peek(:246): peek -1/1 bytes, errno=11
+[2020-05-23 13:16:51 @23.0]     TRACE   swConnection_send(:218): send 14/14 bytes, errno=0
+[2020-05-23 13:16:51 @23.0]     TRACE   swConnection_peek(:246): peek -1/1 bytes, errno=11
+[2020-05-23 13:16:51 @23.0]     TRACE   swConnection_recv(:184): recv -1/8192 bytes, errno=11
+[2020-05-23 13:16:51 @23.0]     TRACE   swTimer_add(:183): id=346, exec_msec=192271, msec=60000, round=344, exist=2
+[2020-05-23 13:16:51 @23.0]     TRACE   swReactorEpoll_add(:140): add event[reactor_id=0, fd=5, events=512]
+[2020-05-23 13:16:51 @23.0]     TRACE   wait_event(:146): socket#5 blongs to cid#1 is waiting for READ event
+[2020-05-23 13:16:51 @23.0]     TRACE   on_yield(:214): php_coro_yield from cid=1 to cid=-1
+[2020-05-23 13:16:51 @23.0]     TRACE   on_resume(:228): php_coro_resume from cid=-1 to cid=1
+[2020-05-23 13:16:51 @23.0]     TRACE   swReactorEpoll_del(:155): remove event[reactor_id=0|fd=5]
+[2020-05-23 13:16:51 @23.0]     TRACE   wait_event(:187): socket#5 blongs to cid#1 trigger READ event
+[2020-05-23 13:16:51 @23.0]     TRACE   swConnection_recv(:184): recv 7/8192 bytes, errno=0
+[2020-05-23 13:16:51 @23.0]     TRACE   swTimer_del_ex(:213): id=346, exec_msec=192271, round=344, exist=0
+[2020-05-23 13:16:51 @23.0]     TRACE   swConnection_peek(:246): peek -1/1 bytes, errno=11
+[2020-05-23 13:16:51 @23.0]     TRACE   swConnection_send(:218): send 46/46 bytes, errno=0
+[2020-05-23 13:16:51 @23.0]     TRACE   swConnection_peek(:246): peek -1/1 bytes, errno=11
+[2020-05-23 13:16:51 @23.0]     TRACE   swConnection_recv(:184): recv -1/8192 bytes, errno=11
+[2020-05-23 13:16:51 @23.0]     TRACE   swTimer_add(:183): id=347, exec_msec=192271, msec=60000, round=345, exist=1
+[2020-05-23 13:16:51 @23.0]     TRACE   swReactorEpoll_add(:140): add event[reactor_id=0, fd=5, events=512]
+[2020-05-23 13:16:51 @23.0]     TRACE   wait_event(:146): socket#5 blongs to cid#1 is waiting for READ event
+[2020-05-23 13:16:51 @23.0]     TRACE   on_yield(:214): php_coro_yield from cid=1 to cid=-1
+[2020-05-23 13:16:51 @23.0]     TRACE   swTimer_select(:234): timer msec=132272, round=345
+[2020-05-23 13:16:51 @23.0]     TRACE   on_resume(:228): php_coro_resume from cid=-1 to cid=1
+[2020-05-23 13:16:51 @23.0]     TRACE   swReactorEpoll_del(:155): remove event[reactor_id=0|fd=5]
+[2020-05-23 13:16:51 @23.0]     TRACE   wait_event(:187): socket#5 blongs to cid#1 trigger READ event
+[2020-05-23 13:16:51 @23.0]     TRACE   swConnection_recv(:184): recv 5/8192 bytes, errno=0
+[2020-05-23 13:16:51 @23.0]     TRACE   swTimer_del_ex(:213): id=347, exec_msec=192271, round=345, exist=0
+[2020-05-23 13:16:51 @23.0]     TRACE   swTimer_add(:183): id=348, exec_msec=132772, msec=500, round=346, exist=1
+[2020-05-23 13:16:51 @23.0]     TRACE   on_yield(:214): php_coro_yield from cid=1 to cid=-1
+[2020-05-23 13:16:51 @23.0]     TRACE   swTimer_select(:234): timer msec=132272, round=346
+[2020-05-23 13:16:51 @26.0]     TRACE   swTimer_select(:234): timer msec=132259, round=355
+[2020-05-23 13:16:51 @26.0]     TRACE   swTimer_select(:246): id=356, exec_msec=132259, round=354, exist=0
+[2020-05-23 13:16:51 @26.0]     TRACE   on_resume(:228): php_coro_resume from cid=-1 to cid=1
+[2020-05-23 13:16:51 @26.0]     TRACE   swConnection_peek(:246): peek -1/1 bytes, errno=11
+[2020-05-23 13:16:51 @26.0]     TRACE   swConnection_send(:218): send 14/14 bytes, errno=0
+[2020-05-23 13:16:51 @26.0]     TRACE   swConnection_peek(:246): peek -1/1 bytes, errno=11
+[2020-05-23 13:16:51 @26.0]     TRACE   swConnection_recv(:184): recv -1/8192 bytes, errno=11
+[2020-05-23 13:16:51 @26.0]     TRACE   swTimer_add(:183): id=357, exec_msec=192259, msec=60000, round=355, exist=2
+[2020-05-23 13:16:51 @26.0]     TRACE   swReactorEpoll_add(:140): add event[reactor_id=0, fd=5, events=512]
+[2020-05-23 13:16:51 @26.0]     TRACE   wait_event(:146): socket#5 blongs to cid#1 is waiting for READ event
+[2020-05-23 13:16:51 @26.0]     TRACE   on_yield(:214): php_coro_yield from cid=1 to cid=-1
+[2020-05-23 13:16:51 @26.0]     TRACE   on_resume(:228): php_coro_resume from cid=-1 to cid=1
+[2020-05-23 13:16:51 @26.0]     TRACE   swReactorEpoll_del(:155): remove event[reactor_id=0|fd=5]
+[2020-05-23 13:16:51 @26.0]     TRACE   wait_event(:187): socket#5 blongs to cid#1 trigger READ event
+[2020-05-23 13:16:51 @26.0]     TRACE   swConnection_recv(:184): recv 7/8192 bytes, errno=0
+[2020-05-23 13:16:51 @26.0]     TRACE   swTimer_del_ex(:213): id=357, exec_msec=192259, round=355, exist=0
+[2020-05-23 13:16:51 @26.0]     TRACE   swConnection_peek(:246): peek -1/1 bytes, errno=11
+[2020-05-23 13:16:51 @26.0]     TRACE   swConnection_send(:218): send 36/36 bytes, errno=0
+[2020-05-23 13:16:51 @26.0]     TRACE   swConnection_peek(:246): peek -1/1 bytes, errno=11
+[2020-05-23 13:16:51 @26.0]     TRACE   swConnection_recv(:184): recv -1/8192 bytes, errno=11
+[2020-05-23 13:16:51 @26.0]     TRACE   swTimer_add(:183): id=358, exec_msec=192259, msec=60000, round=356, exist=1
+[2020-05-23 13:16:51 @26.0]     TRACE   swReactorEpoll_add(:140): add event[reactor_id=0, fd=5, events=512]
+[2020-05-23 13:16:51 @26.0]     TRACE   wait_event(:146): socket#5 blongs to cid#1 is waiting for READ event
+[2020-05-23 13:16:51 @26.0]     TRACE   on_yield(:214): php_coro_yield from cid=1 to cid=-1
+[2020-05-23 13:16:51 @26.0]     TRACE   swTimer_select(:234): timer msec=132259, round=356
+[2020-05-23 13:16:51 @26.0]     TRACE   on_resume(:228): php_coro_resume from cid=-1 to cid=1
+[2020-05-23 13:16:51 @26.0]     TRACE   swReactorEpoll_del(:155): remove event[reactor_id=0|fd=5]
+[2020-05-23 13:16:51 @26.0]     TRACE   wait_event(:187): socket#5 blongs to cid#1 trigger READ event
+[2020-05-23 13:16:51 @26.0]     TRACE   swConnection_recv(:184): recv 5/8192 bytes, errno=0
+[2020-05-23 13:16:51 @26.0]     TRACE   swTimer_del_ex(:213): id=358, exec_msec=192259, round=356, exist=0
+[2020-05-23 13:16:51 @26.0]     TRACE   swTimer_add(:183): id=359, exec_msec=132760, msec=500, round=357, exist=1
+[2020-05-23 13:16:51 @26.0]     TRACE   on_yield(:214): php_coro_yield from cid=1 to cid=-1
+[2020-05-23 13:16:51 @26.0]     TRACE   swTimer_select(:234): timer msec=132260, round=357
+[2020-05-23 13:16:51 @28.0]     TRACE   swTimer_select(:234): timer msec=132500, round=265
+[2020-05-23 13:16:51 @28.0]     TRACE   swTimer_select(:246): id=1, exec_msec=132500, round=0, exist=0
+[2020-05-23 13:16:51 @28.0]     TRACE   Context(:40): alloc stack: size=2097152, ptr=0x5644c70122e0
+[2020-05-23 13:16:51 @28.0]     TRACE   create_func(:352): Create coro id: 265, origin cid: -1, coro total count: 1, heap size: 3553568
+[2020-05-23 13:16:51 @28.0]     TRACE   on_close(:260): coro close cid=265 and resume to -1, 0 remained. usage size: 3545376. malloc size: 4194304
+[2020-05-23 13:16:51 @28.0]     TRACE   close(:87): coroutine#265 stack memory use less than 65536 bytes
+[2020-05-23 13:16:51 @28.0]     TRACE   ~Context(:71): free stack: ptr=0x5644c70122e0
+[2020-05-23 13:16:51 @22.0]     TRACE   swTimer_select(:234): timer msec=133787, round=494
+[2020-05-23 13:16:51 @22.0]     TRACE   swTimer_select(:246): id=486, exec_msec=133786, round=493, exist=0
+[2020-05-23 13:16:51 @22.0]     TRACE   on_resume(:228): php_coro_resume from cid=-1 to cid=1
+[2020-05-23 13:16:51 @22.0]     TRACE   swConnection_peek(:246): peek -1/1 bytes, errno=11
+[2020-05-23 13:16:51 @22.0]     TRACE   swConnection_send(:218): send 14/14 bytes, errno=0
+[2020-05-23 13:16:51 @22.0]     TRACE   swConnection_peek(:246): peek -1/1 bytes, errno=11
+[2020-05-23 13:16:51 @22.0]     TRACE   swConnection_recv(:184): recv 7/8192 bytes, errno=0
+[2020-05-23 13:16:51 @22.0]     TRACE   swConnection_peek(:246): peek -1/1 bytes, errno=11
+[2020-05-23 13:16:51 @22.0]     TRACE   swConnection_send(:218): send 46/46 bytes, errno=0
+[2020-05-23 13:16:51 @22.0]     TRACE   swConnection_peek(:246): peek -1/1 bytes, errno=11
+[2020-05-23 13:16:51 @22.0]     TRACE   swConnection_recv(:184): recv 5/8192 bytes, errno=0
+[2020-05-23 13:16:51 @22.0]     TRACE   swTimer_add(:183): id=487, exec_msec=134287, msec=500, round=494, exist=2
+[2020-05-23 13:16:51 @22.0]     TRACE   on_yield(:214): php_coro_yield from cid=1 to cid=-1
+[2020-05-23 13:16:51 #1.4]      TRACE   swTimer_select(:234): timer msec=134001, round=135
+[2020-05-23 13:16:51 #1.4]      TRACE   swTimer_select(:246): id=1, exec_msec=134000, round=0, exist=0
+[2020-05-23 13:16:51 @23.0]     TRACE   swTimer_select(:234): timer msec=132772, round=347
+[2020-05-23 13:16:51 @23.0]     TRACE   swTimer_select(:246): id=348, exec_msec=132772, round=346, exist=0
+[2020-05-23 13:16:51 @23.0]     TRACE   on_resume(:228): php_coro_resume from cid=-1 to cid=1
+[2020-05-23 13:16:51 @23.0]     TRACE   swConnection_peek(:246): peek -1/1 bytes, errno=11
+[2020-05-23 13:16:51 @23.0]     TRACE   swConnection_send(:218): send 14/14 bytes, errno=0
+[2020-05-23 13:16:51 @23.0]     TRACE   swConnection_peek(:246): peek -1/1 bytes, errno=11
+[2020-05-23 13:16:51 @23.0]     TRACE   swConnection_recv(:184): recv -1/8192 bytes, errno=11
+[2020-05-23 13:16:51 @23.0]     TRACE   swTimer_add(:183): id=349, exec_msec=192772, msec=60000, round=347, exist=2
+[2020-05-23 13:16:51 @23.0]     TRACE   swReactorEpoll_add(:140): add event[reactor_id=0, fd=5, events=512]
+[2020-05-23 13:16:51 @23.0]     TRACE   wait_event(:146): socket#5 blongs to cid#1 is waiting for READ event
+[2020-05-23 13:16:51 @23.0]     TRACE   on_yield(:214): php_coro_yield from cid=1 to cid=-1
+[2020-05-23 13:16:51 @23.0]     TRACE   on_resume(:228): php_coro_resume from cid=-1 to cid=1
+[2020-05-23 13:16:51 @23.0]     TRACE   swReactorEpoll_del(:155): remove event[reactor_id=0|fd=5]
+[2020-05-23 13:16:51 @23.0]     TRACE   wait_event(:187): socket#5 blongs to cid#1 trigger READ event
+[2020-05-23 13:16:51 @23.0]     TRACE   swConnection_recv(:184): recv 7/8192 bytes, errno=0
+[2020-05-23 13:16:51 @23.0]     TRACE   swTimer_del_ex(:213): id=349, exec_msec=192772, round=347, exist=0
+[2020-05-23 13:16:51 @23.0]     TRACE   swConnection_peek(:246): peek -1/1 bytes, errno=11
+[2020-05-23 13:16:51 @23.0]     TRACE   swConnection_send(:218): send 46/46 bytes, errno=0
+[2020-05-23 13:16:51 @23.0]     TRACE   swConnection_peek(:246): peek 1/1 bytes, errno=0
+[2020-05-23 13:16:51 @23.0]     TRACE   swConnection_recv(:184): recv 5/8192 bytes, errno=0
+[2020-05-23 13:16:51 @23.0]     TRACE   swTimer_add(:183): id=350, exec_msec=133273, msec=500, round=348, exist=1
+[2020-05-23 13:16:51 @23.0]     TRACE   on_yield(:214): php_coro_yield from cid=1 to cid=-1
+[2020-05-23 13:16:51 @23.0]     TRACE   swTimer_select(:234): timer msec=132773, round=348
+[2020-05-23 13:16:51 @26.0]     TRACE   swTimer_select(:234): timer msec=132760, round=358
+[2020-05-23 13:16:51 @26.0]     TRACE   swTimer_select(:246): id=359, exec_msec=132760, round=357, exist=0
+[2020-05-23 13:16:51 @26.0]     TRACE   on_resume(:228): php_coro_resume from cid=-1 to cid=1
+[2020-05-23 13:16:51 @26.0]     TRACE   swConnection_peek(:246): peek -1/1 bytes, errno=11
+[2020-05-23 13:16:51 @26.0]     TRACE   swConnection_send(:218): send 14/14 bytes, errno=0
+[2020-05-23 13:16:51 @26.0]     TRACE   swConnection_peek(:246): peek -1/1 bytes, errno=11
+[2020-05-23 13:16:51 @26.0]     TRACE   swConnection_recv(:184): recv -1/8192 bytes, errno=11
+[2020-05-23 13:16:51 @26.0]     TRACE   swTimer_add(:183): id=360, exec_msec=192760, msec=60000, round=358, exist=2
+[2020-05-23 13:16:51 @26.0]     TRACE   swReactorEpoll_add(:140): add event[reactor_id=0, fd=5, events=512]
+[2020-05-23 13:16:51 @26.0]     TRACE   wait_event(:146): socket#5 blongs to cid#1 is waiting for READ event
+[2020-05-23 13:16:51 @26.0]     TRACE   on_yield(:214): php_coro_yield from cid=1 to cid=-1
+[2020-05-23 13:16:51 @26.0]     TRACE   on_resume(:228): php_coro_resume from cid=-1 to cid=1
+[2020-05-23 13:16:51 @26.0]     TRACE   swReactorEpoll_del(:155): remove event[reactor_id=0|fd=5]
+[2020-05-23 13:16:51 @26.0]     TRACE   wait_event(:187): socket#5 blongs to cid#1 trigger READ event
+[2020-05-23 13:16:51 @26.0]     TRACE   swConnection_recv(:184): recv 7/8192 bytes, errno=0
+[2020-05-23 13:16:51 @26.0]     TRACE   swTimer_del_ex(:213): id=360, exec_msec=192760, round=358, exist=0
+[2020-05-23 13:16:51 @26.0]     TRACE   swConnection_peek(:246): peek -1/1 bytes, errno=11
+[2020-05-23 13:16:51 @26.0]     TRACE   swConnection_send(:218): send 36/36 bytes, errno=0
+[2020-05-23 13:16:51 @26.0]     TRACE   swConnection_peek(:246): peek -1/1 bytes, errno=11
+[2020-05-23 13:16:51 @26.0]     TRACE   swConnection_recv(:184): recv -1/8192 bytes, errno=11
+[2020-05-23 13:16:51 @26.0]     TRACE   swTimer_add(:183): id=361, exec_msec=192760, msec=60000, round=359, exist=1
+[2020-05-23 13:16:51 @26.0]     TRACE   swReactorEpoll_add(:140): add event[reactor_id=0, fd=5, events=512]
+[2020-05-23 13:16:51 @26.0]     TRACE   wait_event(:146): socket#5 blongs to cid#1 is waiting for READ event
+[2020-05-23 13:16:51 @26.0]     TRACE   on_yield(:214): php_coro_yield from cid=1 to cid=-1
+[2020-05-23 13:16:51 @26.0]     TRACE   swTimer_select(:234): timer msec=132760, round=359
+[2020-05-23 13:16:51 @26.0]     TRACE   on_resume(:228): php_coro_resume from cid=-1 to cid=1
+[2020-05-23 13:16:51 @26.0]     TRACE   swReactorEpoll_del(:155): remove event[reactor_id=0|fd=5]
+[2020-05-23 13:16:51 @26.0]     TRACE   wait_event(:187): socket#5 blongs to cid#1 trigger READ event
+[2020-05-23 13:16:51 @26.0]     TRACE   swConnection_recv(:184): recv 5/8192 bytes, errno=0
+[2020-05-23 13:16:51 @26.0]     TRACE   swTimer_del_ex(:213): id=361, exec_msec=192760, round=359, exist=0
+[2020-05-23 13:16:51 @26.0]     TRACE   swTimer_add(:183): id=362, exec_msec=133261, msec=500, round=360, exist=1
+[2020-05-23 13:16:51 @26.0]     TRACE   on_yield(:214): php_coro_yield from cid=1 to cid=-1
+[2020-05-23 13:16:51 @26.0]     TRACE   swTimer_select(:234): timer msec=132761, round=360
+[2020-05-23 13:16:51 #1.4]      TRACE   swTimer_select(:234): timer msec=133001, round=134
+[2020-05-23 13:16:51 #1.4]      TRACE   swTimer_select(:246): id=1, exec_msec=133000, round=0, exist=0
+[2020-05-23 13:16:51 @28.0]     TRACE   swTimer_select(:234): timer msec=133001, round=266
+[2020-05-23 13:16:51 @28.0]     TRACE   swTimer_select(:246): id=1, exec_msec=133000, round=0, exist=0
+[2020-05-23 13:16:51 @28.0]     TRACE   Context(:40): alloc stack: size=2097152, ptr=0x5644c70122e0
+[2020-05-23 13:16:51 @28.0]     TRACE   create_func(:352): Create coro id: 266, origin cid: -1, coro total count: 1, heap size: 3553568
+[2020-05-23 13:16:51 @28.0]     TRACE   on_close(:260): coro close cid=266 and resume to -1, 0 remained. usage size: 3545376. malloc size: 4194304
+[2020-05-23 13:16:51 @28.0]     TRACE   close(:87): coroutine#266 stack memory use less than 65536 bytes
+[2020-05-23 13:16:51 @28.0]     TRACE   ~Context(:71): free stack: ptr=0x5644c70122e0
+[2020-05-23 13:16:51 @21.0]     TRACE   swTimer_select(:234): timer msec=134223, round=136
+[2020-05-23 13:16:51 @21.0]     TRACE   swTimer_select(:246): id=272, exec_msec=134222, round=135, exist=1
+[2020-05-23 13:16:51 @21.0]     TRACE   on_resume(:228): php_coro_resume from cid=-1 to cid=1
+[2020-05-23 13:16:51 @21.0]     TRACE   swTimer_add(:183): id=273, exec_msec=135223, msec=1000, round=136, exist=3
+[2020-05-23 13:16:51 @21.0]     TRACE   on_yield(:214): php_coro_yield from cid=1 to cid=-1
+[2020-05-23 13:16:51 @21.0]     TRACE   swTimer_select(:246): id=271, exec_msec=134222, round=135, exist=1
+[2020-05-23 13:16:51 @21.0]     TRACE   on_resume(:228): php_coro_resume from cid=-1 to cid=2
+[2020-05-23 13:16:51 @21.0]     TRACE   swTimer_add(:183): id=274, exec_msec=135224, msec=1000, round=136, exist=3
+[2020-05-23 13:16:51 @21.0]     TRACE   on_yield(:214): php_coro_yield from cid=2 to cid=-1
+[2020-05-23 13:16:51 @22.0]     TRACE   swTimer_select(:234): timer msec=134288, round=495
+[2020-05-23 13:16:51 @22.0]     TRACE   swTimer_select(:246): id=487, exec_msec=134287, round=494, exist=0
+[2020-05-23 13:16:51 @22.0]     TRACE   on_resume(:228): php_coro_resume from cid=-1 to cid=1
+[2020-05-23 13:16:51 @22.0]     TRACE   swConnection_peek(:246): peek -1/1 bytes, errno=11
+[2020-05-23 13:16:51 @22.0]     TRACE   swConnection_send(:218): send 14/14 bytes, errno=0
+[2020-05-23 13:16:51 @22.0]     TRACE   swConnection_peek(:246): peek -1/1 bytes, errno=11
+[2020-05-23 13:16:51 @22.0]     TRACE   swConnection_recv(:184): recv 7/8192 bytes, errno=0
+[2020-05-23 13:16:51 @22.0]     TRACE   swConnection_peek(:246): peek -1/1 bytes, errno=11
+[2020-05-23 13:16:51 @22.0]     TRACE   swConnection_send(:218): send 46/46 bytes, errno=0
+[2020-05-23 13:16:51 @22.0]     TRACE   swConnection_peek(:246): peek -1/1 bytes, errno=11
+[2020-05-23 13:16:51 @22.0]     TRACE   swConnection_recv(:184): recv 5/8192 bytes, errno=0
+[2020-05-23 13:16:51 @22.0]     TRACE   swTimer_add(:183): id=488, exec_msec=134788, msec=500, round=495, exist=2
+[2020-05-23 13:16:51 @22.0]     TRACE   on_yield(:214): php_coro_yield from cid=1 to cid=-1
+[2020-05-23 13:16:51 #1.4]      TRACE   swServer_signal_handler(:1654): signal[15] triggered
+[2020-05-23 13:16:51 #1.4]      INFO    Server is shutdown now
+[2020-05-23 13:16:51 #1.4]      TRACE   swTimer_select(:234): timer msec=133256, round=135
+[2020-05-23 13:16:51 #1.4]      TRACE   swTimer_del_ex(:213): id=1, exec_msec=134000, round=0, exist=0
+[2020-05-23 13:16:51 #1.4]      TRACE   swServer_free(:771): release service
+[2020-05-23 13:16:51 $8.0]      TRACE   swManager_loop(:495): [Manager]kill worker processor
+[2020-05-23 13:16:51 $8.0]      TRACE   swManager_loop(:495): [Manager]kill worker processor
+[2020-05-23 13:16:51 $8.0]      TRACE   swManager_loop(:495): [Manager]kill worker processor
+[2020-05-23 13:16:51 $8.0]      TRACE   swManager_loop(:495): [Manager]kill worker processor
+[2020-05-23 13:16:51 #1.4]      TRACE   swServer_signal_handler(:1654): signal[15] triggered
+[2020-05-23 13:16:51 #1.4]      INFO    Server is shutdown now
+[2020-05-23 13:16:51 #1.4]      TRACE   swTimer_select(:234): timer msec=134448, round=136
+[2020-05-23 13:16:51 #1.4]      TRACE   swTimer_del_ex(:213): id=1, exec_msec=135000, round=0, exist=0
+[2020-05-23 13:16:51 #1.4]      TRACE   swServer_free(:771): release service
+[2020-05-23 13:16:51 $7.0]      TRACE   swManager_loop(:495): [Manager]kill worker processor
+[2020-05-23 13:16:51 $7.0]      TRACE   swManager_loop(:495): [Manager]kill worker processor
+[2020-05-23 13:16:51 $7.0]      TRACE   swManager_loop(:495): [Manager]kill worker processor
+[2020-05-23 13:16:51 $7.0]      TRACE   swManager_loop(:495): [Manager]kill worker processor
+[2020-05-23 13:16:51 #1.0]      TRACE   swConnection_recv(:184): recv 0/8192 bytes, errno=0
+[2020-05-23 13:16:51 #1.0]      TRACE   swReactorThread_onClose(:309): client[fd=52] close the connection
+[2020-05-23 13:16:51 #1.0]      TRACE   swReactorEpoll_del(:155): remove event[reactor_id=0|fd=52]
+[2020-05-23 13:16:51 #1.3]      TRACE   swConnection_recv(:184): recv 0/8192 bytes, errno=0
+[2020-05-23 13:16:51 #1.3]      TRACE   swReactorThread_onClose(:309): client[fd=39] close the connection
+[2020-05-23 13:16:51 #1.3]      TRACE   swReactorEpoll_del(:155): remove event[reactor_id=3|fd=39]
+[2020-05-23 13:16:51 #1.0]      TRACE   swConnection_recv(:184): recv 0/8192 bytes, errno=0
+[2020-05-23 13:16:51 #1.0]      TRACE   swReactorThread_onClose(:309): client[fd=40] close the connection
+[2020-05-23 13:16:51 #1.0]      TRACE   swReactorEpoll_del(:155): remove event[reactor_id=0|fd=40]
+[2020-05-23 13:16:51 #1.3]      TRACE   swConnection_recv(:184): recv 0/8192 bytes, errno=0
+[2020-05-23 13:16:51 #1.3]      TRACE   swReactorThread_onClose(:309): client[fd=51] close the connection
+[2020-05-23 13:16:51 #1.3]      TRACE   swReactorEpoll_del(:155): remove event[reactor_id=3|fd=51]
+[2020-05-23 13:16:51 #1.4]      TRACE   swServer_free(:785): terminate heartbeat thread
+[2020-05-23 13:16:51 #1.4]      TRACE   swServer_free(:806): terminate reactor threads
+[2020-05-23 13:16:52 #1.4]      TRACE   swServer_free(:785): terminate heartbeat thread
+[2020-05-23 13:16:52 #1.4]      TRACE   swServer_free(:806): terminate reactor threads

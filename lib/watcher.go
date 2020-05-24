@@ -10,6 +10,7 @@ import (
 	"regexp"
 	"strings"
 	"sync"
+	"syscall"
 	"time"
 
 	"github.com/fsnotify/fsnotify"
@@ -27,6 +28,9 @@ var timeID *time.Timer
 
 var lock sync.Mutex
 
+var cmd *exec.Cmd
+var pid int
+
 func WatchDir(watch *fsnotify.Watcher, dir string) error {
 
 	dirpath, err := filepath.Abs(dir)
@@ -35,16 +39,17 @@ func WatchDir(watch *fsnotify.Watcher, dir string) error {
 	}
 
 	//通过Walk来遍历目录下的所有子目录
-	return filepath.Walk(dirpath, func(path string, info os.FileInfo, err error) error {
+	return filepath.Walk(dirpath, func(path2 string, info os.FileInfo, err error) error {
 		//判断是否为目录，监控目录,目录下文件也在监控范围内，不需要加
 		if info.IsDir() {
-			path, err := filepath.Abs(path)
-			if err != nil {
-				return err
+			absPath, err2 := filepath.Abs(path2)
+
+			if err2 != nil {
+				return err2
 			}
-			err = watch.Add(path)
-			if err != nil {
-				return err
+			err2 = watch.Add(absPath)
+			if err2 != nil {
+				return err2
 			}
 		}
 		return nil
@@ -57,7 +62,7 @@ func Watch(args *Args) {
 
 	timeID = nil
 	//创建一个监控对象
-	go startProcess(*args)
+	go StartProcess(*args)
 
 	watch, err := fsnotify.NewWatcher()
 	if err != nil {
@@ -132,33 +137,61 @@ func restartProcess(args *Args) {
 	}
 
 	timeID = time.AfterFunc(3*time.Second, func() {
-		if process != nil {
-			fmt.Printf("pid:%d close\n", process.Pid)
-			process.Kill()
+		if pid != 0 {
+			fmt.Printf("pid:%d close\n", pid)
+			syscall.Kill(pid, syscall.SIGTERM)
+			for {
+				if err := syscall.Kill(pid, 0); err != nil {
+					break
+				}
+				time.Sleep(100 * time.Millisecond)
+			}
+			pid = 0
 		}
 
-		go startProcess(*args)
+		go StartProcess(*args)
 	})
 }
 
-func startProcess(a Args) error {
-	lock.Lock()
-	defer lock.Unlock()
+func initCmd(a Args) *exec.Cmd {
 	log.Printf("start:%s %s\n", a.Cmd, strings.Join(a.Args, " "))
-
 	cmd := exec.Command(a.Cmd, a.Args...)
+	cmd.Stdin = os.Stdin
 	cmd.Stdout = os.Stdout
 	cmd.Stderr = os.Stderr
 	cmd.Env = os.Environ()
 
-	err := cmd.Start()
-	if err != nil {
+	// user, err := user.Lookup("root")
+	// if err == nil {
+	// 	log.Printf("uid=%s,gid=%s", user.Uid, user.Gid)
+	// 	uid, _ := strconv.Atoi(user.Uid)
+	// 	gid, _ := strconv.Atoi(user.Gid)
+	// 	cmd.SysProcAttr = &syscall.SysProcAttr{}
+	// 	cmd.SysProcAttr.Credential = &syscall.Credential{Uid: uint32(uid), Gid: uint32(gid)}
+	// }
+
+	return cmd
+}
+
+func StartProcess(a Args) error {
+
+	cmd := initCmd(a)
+
+	if err := cmd.Start(); err != nil {
 		log.Printf("process error:%s\n", err.Error())
 		return err
 	}
 
-	process = cmd.Process
-	err = cmd.Wait()
-	log.Printf("Wait error:%s\n", err.Error())
-	return err
+	log.Printf("start process id:%d\n", cmd.Process.Pid)
+
+	pid = cmd.Process.Pid
+
+	if err := cmd.Wait(); err != nil {
+		log.Printf("process wait error:%s\n", err.Error())
+		return err
+	}
+
+	log.Printf("stoped process id:%d, res:%s,exit:%d\n", cmd.Process.Pid, cmd.ProcessState.String(), cmd.ProcessState.ExitCode())
+
+	return nil
 }

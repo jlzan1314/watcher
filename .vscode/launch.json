@@ -22,8 +22,6 @@
                 "/home/go/projects/watcher/test",
                 "-d",
                 "/home/go/projects/watcher/test2",
-                "-m",
-                "go|txt",
             ]
         }
     ]
