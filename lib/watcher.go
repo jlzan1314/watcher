@@ -31,6 +31,8 @@ var lock sync.Mutex
 var cmd *exec.Cmd
 var pid int
 
+var ModifiedFiles *sync.Map
+
 func WatchDir(watch *fsnotify.Watcher, dir string) error {
 
 	dirpath, err := filepath.Abs(dir)
@@ -59,6 +61,8 @@ func WatchDir(watch *fsnotify.Watcher, dir string) error {
 //启动进程
 
 func Watch(args *Args) {
+
+	ModifiedFiles = &sync.Map{}
 
 	timeID = nil
 	//创建一个监控对象
@@ -112,7 +116,7 @@ func Watch(args *Args) {
 							}
 						}
 
-						log.Println(ev.Name, "modifyed")
+						ModifiedFiles.Store(ev.Name, 1)
 						restartProcess(args)
 					}
 				}
@@ -137,6 +141,15 @@ func restartProcess(args *Args) {
 	}
 
 	timeID = time.AfterFunc(3*time.Second, func() {
+
+		ModifiedFiles.Range(func(key interface{}, value interface{}) bool {
+			if k, ok := key.(string); ok {
+				log.Println(k + " modifyed")
+			}
+			ModifiedFiles.Delete(key)
+			return true
+		})
+
 		if pid != 0 {
 			fmt.Printf("pid:%d close\n", pid)
 			syscall.Kill(pid, syscall.SIGTERM)
