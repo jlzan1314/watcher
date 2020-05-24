@@ -204,7 +204,7 @@ func StartProcess(a Args) error {
 		return err
 	}
 
-	log.Printf("stoped process id:%d, res:%s,exit:%d\n", cmd.Process.Pid, cmd.ProcessState.String(), cmd.ProcessState.ExitCode())
+	log.Printf("stoped process id:%d, res:%s\n", cmd.Process.Pid, cmd.ProcessState.String())
 
 	return nil
 }
