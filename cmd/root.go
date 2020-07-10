@@ -11,6 +11,7 @@ import (
 var (
 	Cmd   string
 	Match string
+	T     int
 	Args  []string
 	Dirs  []string
 )
@@ -24,6 +25,7 @@ var RootCmd = &cobra.Command{
 		c.MarkFlagRequired("cmd")
 		argsObject := &lib.Args{
 			Cmd:   Cmd,
+			T:     T,
 			Args:  Args,
 			Dirs:  Dirs,
 			Match: Match,
@@ -76,9 +78,11 @@ func init() {
 	RootCmd.Flags().StringVarP(&Match, "match", "m", "", "match 'php|js'")
 	RootCmd.Flags().StringSliceVarP(&Args, "args", "a", nil, "-a args2 -a arg2")
 	RootCmd.Flags().StringSliceVarP(&Dirs, "dirs", "d", nil, "-d args2 -d arg2")
+	RootCmd.Flags().IntVarP(&T, "time", "t", 2, "-t 2")
 
 	RunCmd.Flags().StringVarP(&Cmd, "cmd", "c", "", "cmd")
 	RunCmd.Flags().StringVarP(&Match, "match", "m", "", "match 'php|js'")
 	RunCmd.Flags().StringSliceVarP(&Args, "args", "a", nil, "-a args2 -a arg2")
 	RunCmd.Flags().StringSliceVarP(&Dirs, "dirs", "d", nil, "-d args2 -d arg2")
+
 }

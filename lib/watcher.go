@@ -19,6 +19,7 @@ import (
 type Args struct {
 	Cmd   string
 	Match string
+	T     int
 	Args  []string
 	Dirs  []string
 }
@@ -90,33 +91,48 @@ func Watch(args *Args) {
 			select {
 			case ev := <-watch.Events:
 				{
+
+					var evname string
+					var typeStr string
+
 					if ev.Op&fsnotify.Create == fsnotify.Create {
 						file, err := os.Stat(ev.Name)
-						if err == nil && file.IsDir() {
-							watch.Add(ev.Name)
+						if err == nil {
+							if file.IsDir() {
+								watch.Add(ev.Name)
+							} else if file.Mode().IsRegular() {
+								evname = ev.Name
+								typeStr = "Create"
+							}
 						}
 					}
 
 					if ev.Op&fsnotify.Remove == fsnotify.Remove {
 						//如果删除文件是目录，则移除监控
-						fi, err := os.Stat(ev.Name)
-						if err == nil && fi.IsDir() {
-							watch.Remove(ev.Name)
+						err := watch.Remove(ev.Name)
+						if err != nil {
+							evname = ev.Name
+							typeStr = "Remove"
 						}
 					}
 
 					//我们只需关心文件的修改
 					if ev.Op&fsnotify.Write == fsnotify.Write {
+						evname = ev.Name
+						typeStr = "Write"
+					}
+
+					if evname != "" {
 						if args.Match != "" {
 							args.Match = strings.ToLower(args.Match)
-							var bytes = []byte(strings.ToLower(path.Ext(ev.Name)))
+							var bytes = []byte(strings.ToLower(path.Ext(evname)))
 							m, _ := regexp.Match("^("+args.Match+")$", bytes[1:])
 							if !m {
 								break
 							}
 						}
 
-						ModifiedFiles.Store(ev.Name, 1)
+						ModifiedFiles.Store(evname, typeStr)
 						restartProcess(args)
 					}
 				}
@@ -134,24 +150,28 @@ func Watch(args *Args) {
 }
 
 func restartProcess(args *Args) {
+	watchTime := time.Duration(args.T) * time.Second
+
 	if timeID != nil {
 		timeID.Stop()
-		timeID.Reset(3 * time.Second)
+		timeID.Reset(watchTime)
 		return
 	}
 
-	timeID = time.AfterFunc(3*time.Second, func() {
-
+	timeID = time.AfterFunc(watchTime, func() {
+		log.Println(" -------------------------------------------------------------------------------")
 		ModifiedFiles.Range(func(key interface{}, value interface{}) bool {
-			if k, ok := key.(string); ok {
-				log.Println(k + " modifyed")
+			if v, ok1 := value.(string); ok1 {
+				if k, ok := key.(string); ok {
+					log.Println(k + " " + v)
+				}
 			}
 			ModifiedFiles.Delete(key)
 			return true
 		})
+		log.Println(" -------------------------------------------------------------------------------")
 
 		if pid != 0 {
-			fmt.Printf("pid:%d close\n", pid)
 			syscall.Kill(pid, syscall.SIGTERM)
 			for {
 				if err := syscall.Kill(pid, 0); err != nil {
